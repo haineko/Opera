@@ -1,0 +1,42 @@
+.curtain-back {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 2;
+  padding: 0;
+  margin: 0 auto;
+  width: 1920px;
+  height: 1080px;
+  background: url("../img/bg.jpg") no-repeat 50% 50%;
+  transform: translate(-50%, -50%);
+  opacity: 2;
+  transition: all 6s;
+}
+
+.curtain-back::after,
+.curtain-back::before {
+  content: '';
+  display: table;
+  clear: both;
+} 
+
+.curtain--hide {
+  top: -100%;
+  opacity: 0;
+}
+
+.curtain-front {
+  padding: 0;
+  margin: 0 auto;
+  z-index: 5;
+  width: 1920px;
+  height: 1380px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background: url("../img/bg_curtain.png") no-repeat 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}

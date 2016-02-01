@@ -16,9 +16,11 @@ body {
 //  }
 
 }
+
 * {
   box-sizing: border-box;
 }
+
 .wrapper {
     width: 100vw;
     height: 100vh;
@@ -27,113 +29,13 @@ body {
     position: relative;
 }
 
-.cointer {
-  padding: 0;
-  margin: 0 auto;
+.content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
   width: 1920px;
   height: 1080px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  background: url("../img/bg.jpg") no-repeat 50% 50%;
   transform: translate(-50%, -50%);
 }
 
-.cointer::after,
-.cointer::before {
-  content: '';
-  display: table;
-  clear: both;
-} 
 
-.front {
-  margin: 0 auto;
-  width: 1920px;
-  height: 1380px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  background: url("../img/curtain_front.png") no-repeat 50% 50%;
-  transform: translate(-50%, -50%);
-}
-header{
-  width: 100%;
-  height: 100px;
-  background-color: #fff;
-}
-.content {
-  position: relative;
-  margin: 0 auto;
-  width: 960px;
-  height: 1280px;
-  z-index: 5;
-  border:  2px solid green;
-}
-
-.logo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 45%;
-  height: 555px;
-  display: block;
-  text-indent: 100%;
-  white-space: nowrap;
-  background: url("../img/logo.png") no-repeat 50%/cover;
-  transform: translateX(-50%) translateY(-50%);
-  overflow: hidden;
-}
-
-.entry {
-  position: absolute;
-  top: 818px;
-  left: 50%;
-  margin: 0 auto;
-  width: 290px;
-  text-align: center;
-  transform: translateX(-50%);
-}
-
-.entry__btn {
-  margin-bottom: 30px;
-  display: block;
-  width: 285px;
-  height: 60px;
-  background: url("../img/btn_entry.png") no-repeat 50%/cover;
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  cursor: pointer;
-}
-
-.entry__btn:hover {
-  background: url("../img/btn_entry-hover.png") no-repeat 50%/cover;
-}
-
-.entry__link {
-  font-size: 12px;
-  line-height: 18px;
-  color: $color-text;
-  letter-spacing: 1px;
-  text-decoration: none;
-}
-
-.entry__link {
-  color: $color-text-hover;
-  text-decoration: underline;
-}
-
-.curtain {
-  padding: 0;
-  margin: 0 auto;
-  width: 1920px;
-  height: 1380px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  background: url("../img/bg_curtain.png") no-repeat 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}

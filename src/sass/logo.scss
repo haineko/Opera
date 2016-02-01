@@ -1,0 +1,13 @@
+.logo {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  width: 45%;
+  height: 555px;
+  display: block;
+  text-indent: 100%;
+  white-space: nowrap;
+  background: url("../img/logo.png") no-repeat 50%/cover;
+  transform: translateX(-50%) translateY(-50%);
+  overflow: hidden;
+}
