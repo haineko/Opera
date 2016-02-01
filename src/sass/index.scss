@@ -1,15 +1,26 @@
+.test {
+  idth: 1920px;
+  height: 1080px;
+  overflow: hidden;
+}
+
 .index {
   padding: 0;
   margin: 0 auto;
   z-index: 1;
   width: 1920px;
-  height: 1080px;
+  height: 100vh;
+  max-height: 1080px;
   position: absolute;
   left: 50%;
   top: 50%;
-  background:  beige  no-repeat 50%;
+  background: #0c0803 url("../img/bg_slider.jpg") no-repeat 50%;
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+
+.main {
+  width: 100%;
 }
