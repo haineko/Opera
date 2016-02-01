@@ -1,7 +1,7 @@
 {
-  "name": "Variety",
+  "name": "Opera",
   "version": "0.0.1",
-  "description": "Landing Page",
+  "description": "Сайт для казино",
   "private": true,
   "main": "gulpfile.js",
   "repository": {
@@ -10,6 +10,7 @@
   },
   "author": "Анна Фадеева",
   "license": "ISC",
+  "dependencies": {},
   "devDependencies": {
     "browser-sync": "^2.10.1",
     "gulp": "^3.9.0",
