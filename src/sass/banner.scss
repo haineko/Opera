@@ -1,0 +1,62 @@
+.main {
+  
+}
+.banner {
+  position: absolute;
+  bottom: 74px;
+  left: 50%;
+  width: 960px;
+  height: 284px;
+  font-size: 0;
+  background: rgba(70, 0, 17, 0.84) url("../img/bg_banner-slider.png") no-repeat 100%/cover;
+  transform: translateX(-50%);
+  overflow: hidden;
+  
+  &__slides {
+    width: 917px;
+    height: 228px;
+    margin: 22px auto 36px;;
+    overflow: hidden;
+  }
+  
+  &__slides::before,
+  &__slides::after{
+    content: '';
+    display: table;
+    clear: both;
+  }
+  
+  &__slide {
+    float: left;
+    display: inline-block;
+    width: 917px;;
+    font-size: 12px;
+  }
+  
+  &__controls {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    padding: 7px 0 6px;
+    font-size: 0;
+    transform: translateX(-50%);
+  }
+  
+  &__label {
+    margin: 5px;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    vertical-align: top;
+    background-color: $color-text;
+    border-radius: 50%;
+    cursor: pointer;
+    &:hover {
+      box-shadow: 0px 0px 7px 0px rgba(253,251,214,0.7);
+    }
+    &--active {
+      background-color: $color-label;
+      box-shadow: 0px 0px 7px 0px rgba(253,251,214,0.7);
+    }
+  }
+}
