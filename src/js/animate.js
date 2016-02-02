@@ -5,5 +5,5 @@ var enrty = document.querySelector(".entry");
   btn.addEventListener('click', function() {
     event.preventDefault();
     curtain.classList.add('curtain--hide');
-    enrty.style.opacity = '0';
+    enrty.classList.add('entry--hide');
   });
