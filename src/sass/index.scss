@@ -21,6 +21,18 @@
   transform: translate(-50%, -50%);
 }
 
+.index__wrap {
+  margin: 0 auto;
+  width: 964px;
+}
+
+.index__wrap::after,
+.index__wrap::before {
+  content: '';
+  display: table;
+  clear: both;
+}
+
 .main {
   width: 100%;
 }
