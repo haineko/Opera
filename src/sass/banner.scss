@@ -1,6 +1,3 @@
-.main {
-  
-}
 .banner {
   position: absolute;
   bottom: 74px;
@@ -27,10 +24,20 @@
   }
   
   &__slide {
+    display: none;
     float: left;
-    display: inline-block;
-    width: 917px;;
+    width: 917px;
+    height: 228px;
     font-size: 12px;
+    
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+      height: auto;
+      margin: auto;
+      display: block;
+    }
   }
   
   &__controls {
@@ -59,4 +66,25 @@
       box-shadow: 0px 0px 7px 0px rgba(253,251,214,0.7);
     }
   }
+  
+  @media only screen and (min-width: 600px) and (max-width: 959px) {
+    width: 684px;
+    height: 210px;
+    background: rgba(70, 0, 17, 0.84) url("../img/bg_banner-slider.png") no-repeat 100%/100%;
+    
+    &__slides {
+      width: 646px;
+      height: 163px;
+      margin: 19px auto 27px;
+    }  
+    &__slide {
+      width: 646px;
+      height: 163px;
+    }  
+  }
+  
+}
+
+.slide-show {
+  display: block;
 }
