@@ -11,18 +11,17 @@
   transform: translate(-50%, -50%);
   opacity: 2;
   transition: all 6s;
-}
 
-.curtain-back::after,
-.curtain-back::before {
-  content: '';
-  display: table;
-  clear: both;
-} 
+  &::after,
+  &::before {
+    content: '';
+    display: table;
+    clear: both;
+  } 
+}
 
 .curtain--hide {
   top: -100%;
-  opacity: 0;
 }
 
 .curtain-front {
@@ -41,33 +40,31 @@
   transform: translate(-50%, -50%);
 }
 
-.curtain-front-left {
+.curtain-front {
   padding: 0;
   margin: 0 auto;
   z-index: 5;
   width: 780px;
   height: 2080px;
   position: absolute;
-  left: 0;
-  top: 50%;
-  background: url("../img/bg_curtain-left.png") no-repeat 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-.curtain-front-right {
-  padding: 0;
-  margin: 0 auto;
-  z-index: 5;
-  width: 780px;
-  height: 2080px;
-  position: absolute;
-  top: 50%;
-  right: 0;
-  background: url("../img/bg_curtain-right.png") no-repeat 50%;
-  -webkit-transform: translate(50%, -50%);
-  -moz-transform: translate(50%, -50%);
-  -ms-transform: translate(50%, -50%);
-  transform: translate(50%, -50%);
+  
+  &--left {
+    left: 0;
+    top: 50%;
+    background: url("../img/bg_curtain-left.png") no-repeat 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  
+  &--right {
+    top: 50%;
+    right: 0;
+    background: url("../img/bg_curtain-right.png") no-repeat 50%;
+    -webkit-transform: translate(50%, -50%);
+    -moz-transform: translate(50%, -50%);
+    -ms-transform: translate(50%, -50%);
+    transform: translate(50%, -50%);
+  }
 }
