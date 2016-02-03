@@ -30,6 +30,12 @@ gulp.task('lib', function() {
   .pipe(gulp.dest("./dest/js"))
 });
 
+gulp.task('csslib', function() {
+  gulp.src("./src/css/lib/*")
+  .pipe(concat('vendor.css'))
+  .pipe(gulp.dest("./dest/css"))
+});
+
 gulp.task('sass', function() {
   return gulp.src("./src/sass/style.scss")
     .pipe(sass())
