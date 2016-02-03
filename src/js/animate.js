@@ -23,7 +23,7 @@ loader.addCompletionListener(function() {
       });
     });
     
-    btn.addEventListener('click', function() {
+    btn.addEventListener('click', function(event) {
       event.preventDefault();
       curtain.classList.add('curtain--hide');
       enrty.classList.add('entry--hide');

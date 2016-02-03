@@ -16,6 +16,10 @@ gulp.task('image', function() {
   gulp.src("./src/img/*")
   .pipe(gulp.dest("./dest/img"))
 });
+gulp.task('font', function() {
+  gulp.src("./src/font/*")
+  .pipe(gulp.dest("./dest/font"))
+});
 
 gulp.task('js', function() {
   gulp.src("./src/js/*")

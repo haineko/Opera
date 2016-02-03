@@ -1,0 +1,64 @@
+.description {
+  position: absolute;
+  bottom: 74px;
+  left: 50%;
+  width: 960px;
+  height: 284px;
+  padding: 22px 25px 36px;
+  font-family: "ArnoPro", "Georgia", "Times New Roman", "Times", serif;
+  font-size: 24px;
+  line-height: 1;
+  color: $color-text-hover;
+  background: rgba(70, 0, 17, 0.84) url("../img/bg_banner-slider.png") no-repeat 100%/cover;
+  transform: translateX(-50%);
+  overflow: hidden;
+  
+  &::after,
+  &::before {
+    content: '';
+    display: table;
+    clear: both;
+  }
+//  &__wrap {
+//    margin: 22px 25px 36px;
+//    height: 284px;
+//  &::after,
+//  &::before {
+//    content: '';
+//    display: table;
+//    clear: both;
+//  }
+//  }
+  
+  &__logo {
+    width: 30%;
+    float: left;
+    height: 226px;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    
+    &--opera {
+      background: url("../img/logo_opera.png") no-repeat center;
+    }
+    
+    &--grand {
+      background: url("../img/logo_grang.png") no-repeat center;
+    }
+  }
+  &__text {
+    position: relative;
+    float: right;
+    width: 70%;
+    height: 226px;
+    overflow: hidden;
+    p {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      margin: 0;
+      padding-right: 25px;
+      transform: translateY(-50%);
+    }
+  }
+}

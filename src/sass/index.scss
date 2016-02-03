@@ -14,7 +14,8 @@
   position: absolute;
   left: 50%;
   top: 50%;
-  background: #0c0803 url("../img/bg_slider.jpg") no-repeat 50%;
+//  background-color: #0c0803;
+  background: #0c0803 url("../img/bg_slider.jpg") no-repeat 50%/cover;
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -25,14 +26,20 @@
     width: 964px;
   }
 
-
   &__wrap::after,
   &__wrap::before {
     content: '';
     display: table;
     clear: both;
   }
-
+  
+  &--opera {
+    background-image: url("../img/bg_opera.jpg");
+  }
+  
+  &--grand {
+    background-image: url("../img/bg_grand.jpg");
+  }
   .main {
     width: 100%;
   }
