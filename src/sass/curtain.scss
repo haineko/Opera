@@ -28,29 +28,13 @@
   padding: 0;
   margin: 0 auto;
   z-index: 5;
-  width: 1920px;
-  height: 1380px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  background: url("../img/bg_curtain.png") no-repeat 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-.curtain-front {
-  padding: 0;
-  margin: 0 auto;
-  z-index: 5;
   width: 780px;
   height: 2080px;
   position: absolute;
   
   &--left {
-    left: 0;
     top: 50%;
+    left: 0;
     background: url("../img/bg_curtain-left.png") no-repeat 50%;
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
@@ -60,11 +44,11 @@
   
   &--right {
     top: 50%;
-    right: 0;
+    left: 100%;
     background: url("../img/bg_curtain-right.png") no-repeat 50%;
-    -webkit-transform: translate(50%, -50%);
-    -moz-transform: translate(50%, -50%);
-    -ms-transform: translate(50%, -50%);
-    transform: translate(50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
 }
