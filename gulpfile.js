@@ -4,6 +4,8 @@ var browserSync = require('browser-sync').create();
 var reload      = browserSync.reload;
 var autoprefixer = require('gulp-autoprefixer');
 var notify = require("gulp-notify");
+var concat = require('gulp-concat');
+var rename = require("gulp-rename");
 
 gulp.task('html', function() {
   gulp.src("./src/*.html")
@@ -17,12 +19,15 @@ gulp.task('image', function() {
 
 gulp.task('js', function() {
   gulp.src("./src/js/*")
+  .pipe(concat('script.js'))
   .pipe(gulp.dest("./dest/js"))
+  
 });
 
 gulp.task('lib', function() {
   gulp.src("./src/lib/*")
-  .pipe(gulp.dest("./dest/lib"))
+  .pipe(concat('vendor.js'))
+  .pipe(gulp.dest("./dest/js"))
 });
 
 gulp.task('sass', function() {
