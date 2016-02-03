@@ -362,6 +362,18 @@ th {
 *:after {
   box-sizing: border-box; }
 
+@font-face {
+  font-family: "DoulosSilr";
+  src: url("../font/doulossilr-webfont.eot?") format("eot"), url("../font/doulossilr-webfont.woff2") format("woff2"), url("../font/doulossilr-webfont.woff") format("woff"), url("../font/doulossilr-webfont.ttf") format("truetype"), url("../font/doulossilr-webfont.svg#DoulosSilr") format("svg");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "ArnoPro";
+  src: url("../font/ArnoPro-LightDisplay.eot?") format("eot"), url("../font/ArnoPro-LightDisplay.woff2") format("woff2"), url("../font/ArnoPro-LightDisplay.woff") format("woff"), url("../font/ArnoPro-LightDisplay.ttf") format("truetype"), url("../font/ArnoPro-LightDisplay.svg#ArnoPro") format("svg");
+  font-style: normal;
+  font-weight: normal; }
+
 html,
 body {
   width: 100%;
@@ -509,7 +521,7 @@ body {
   position: absolute;
   left: 50%;
   top: 50%;
-  background: #0c0803 url("../img/bg_slider.jpg") no-repeat 50%;
+  background: #0c0803 url("../img/bg_slider.jpg") no-repeat 50%/cover;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); }
   .index__wrap {
@@ -519,6 +531,10 @@ body {
     content: '';
     display: table;
     clear: both; }
+  .index--opera {
+    background-image: url("../img/bg_opera.jpg"); }
+  .index--grand {
+    background-image: url("../img/bg_grand.jpg"); }
   .index .main {
     width: 100%; }
   @media only screen and (min-width: 700px) and (max-width: 959px) {
@@ -531,24 +547,29 @@ body {
   z-index: 7;
   width: 100%;
   height: 164px;
+  font-family: "DoulosSilr", "Georgia", "Times New Roman", "Times", serif;
   color: #9f8655;
   text-transform: uppercase;
+  letter-spacing: 1px;
   background: url("../img/bg_main-header.png") no-repeat 50%/cover; }
   .main-header::after, .main-header::before {
     content: '';
     display: table;
     clear: both; }
   .main-header__left {
-    padding-top: 35px;
+    padding-top: 33px;
     padding-left: 24px;
     float: left;
     width: 338px; }
   .main-header__language {
-    margin-bottom: 28px;
-    font-size: 12px; }
+    margin-bottom: 26px;
+    font-size: 12px;
+    line-height: 17px; }
     .main-header__language a {
       color: #9f8655;
       text-decoration: none; }
+      .main-header__language a:hover {
+        color: #fff; }
   .main-header__list {
     margin: 0;
     padding: 0;
@@ -561,6 +582,7 @@ body {
     padding-right: 40px;
     display: inline-block;
     font-size: 17px;
+    line-height: 17px;
     line-height: 1; }
     .main-header__item:last-child {
       padding-right: 0; }
@@ -590,14 +612,14 @@ body {
     left: 28%;
     padding-top: 20px;
     display: none;
-    width: 272px;
+    width: 198px;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%); }
   .main-header__submenu {
     position: relative;
     margin: 0;
     padding: 0;
-    padding: 0 15px 15px;
+    padding: 0 7px 8px;
     display: block;
     text-align: center;
     list-style: none;
@@ -608,11 +630,24 @@ body {
       top: -7px;
       left: 50%;
       display: block;
-      width: 11px;
-      height: 7px;
-      background-color: #a38c6d;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 6.5px 8px 6.5px;
+      border-color: transparent transparent #9e8558 transparent;
       -webkit-transform: translateX(-50%);
               transform: translateX(-50%); }
+    .main-header__submenu::before {
+      content: '';
+      position: absolute;
+      bottom: 8px;
+      left: 7px;
+      width: 184px;
+      height: 13px;
+      background-image: url("../img/circle.jpg");
+      background-position: 0;
+      background-size: 100%;
+      background-repeat: no-repeat; }
     .main-header__submenu li, .main-header__submenu a {
       display: block; }
     .main-header__submenu li {
@@ -622,11 +657,17 @@ body {
       overflow: hidden; }
       .main-header__submenu li:hover a {
         color: #fff; }
+      .main-header__submenu li:last-child {
+        border-bottom: none; }
     .main-header__submenu a {
-      padding: 16px 0;
+      padding: 16px 10px;
       font-size: 14px;
       color: #a38c6d;
-      text-decoration: none; }
+      text-decoration: none;
+      word-wrap: break-word;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7); }
+    .main-header__submenu a.active {
+      color: #fff; }
   .main-header__logo {
     float: left;
     width: 284px;
@@ -645,11 +686,12 @@ body {
       display: table;
       clear: both; }
   .main-header__nav {
-    margin-bottom: 28px;
+    margin-bottom: 26px;
     float: right;
     font-size: 0; }
   .main-header__navlink {
     font-size: 12px;
+    line-height: 17px;
     color: #9f8655;
     text-decoration: none;
     margin-right: 15px; }
@@ -729,6 +771,7 @@ body {
   position: absolute;
   bottom: 11px;
   left: 50%;
+  padding-left: 0;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%); }
   .slick-dots li {
@@ -759,15 +802,66 @@ body {
     bottom: 40px;
     font-size: 12px; } }
 
+.description {
+  position: absolute;
+  bottom: 74px;
+  left: 50%;
+  width: 960px;
+  height: 284px;
+  padding: 22px 25px 36px;
+  font-family: "ArnoPro", "Georgia", "Times New Roman", "Times", serif;
+  font-size: 24px;
+  line-height: 1;
+  color: #fff;
+  background: rgba(70, 0, 17, 0.84) url("../img/bg_banner-slider.png") no-repeat 100%/cover;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  overflow: hidden; }
+  .description::after, .description::before {
+    content: '';
+    display: table;
+    clear: both; }
+  .description__logo {
+    width: 30%;
+    float: left;
+    height: 226px;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap; }
+    .description__logo--opera {
+      background: url("../img/logo_opera.png") no-repeat center; }
+    .description__logo--grand {
+      background: url("../img/logo_grang.png") no-repeat center; }
+  .description__text {
+    position: relative;
+    float: right;
+    width: 70%;
+    height: 226px;
+    overflow: hidden; }
+    .description__text p {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      margin: 0;
+      padding-right: 25px;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%); }
+
 .fullslider {
   position: absolute;
   top: 0;
   left: 0;
-  display: none;
+  display: block;
   width: 100vh;
   max-width: 1920px;
   height: 100vh;
-  max-height: 1080px; }
+  max-height: 1080px;
+  background: #fff;
+  z-index: -2; }
+  .fullslider img {
+    display: block;
+    max-width: 100%;
+    height: auto; }
 
 .main-footer {
   position: absolute;

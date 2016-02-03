@@ -12,7 +12,7 @@ var curtain = document.querySelector(".curtain-back");
 var enrty = document.querySelector(".entry");
  
 loader.addCompletionListener(function() { 
-    console.log("картинки загрузились");
+    
     $(document).ready(function(){
       $('.banner').slick({
           autoplay: true,
@@ -23,7 +23,7 @@ loader.addCompletionListener(function() {
       });
     });
     
-    btn.addEventListener('click', function() {
+    btn.addEventListener('click', function(event) {
       event.preventDefault();
       curtain.classList.add('curtain--hide');
       enrty.classList.add('entry--hide');
