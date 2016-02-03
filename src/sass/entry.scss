@@ -20,15 +20,19 @@
     display: block;
     width: 285px;
     height: 60px;
-    background: url("../img/btn_entry.png") no-repeat 50%/cover;
+    background-image: url("../img/sprite.png");
+    background-repeat: no-repeat;
+    background-position:  0 0;
+    background-size: cover;
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden;
     cursor: pointer;
-    transition: all 0.7s;
+    transition: background-image 0.7s;
 
     &:hover {
-      background: url("../img/btn_entry-hover.png") no-repeat 50%/cover;
+      background-image: url("../img/sprite.png");
+      background-position: 0 -65px;
     }
   }
   

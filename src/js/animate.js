@@ -6,6 +6,7 @@ var loader = new PxLoader();
     loader.addImage('img/logo-mini.png');
     loader.addImage('img/logo.png');
     loader.addImage('img/bg_main-header.png');
+    loader.addImage('img/sprite.png');
 var btn = document.querySelector(".entry__btn");
 var curtain = document.querySelector(".curtain-back");
 var enrty = document.querySelector(".entry");
