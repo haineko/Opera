@@ -4,7 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Opera</title>
+  
+  <link href='https://fonts.googleapis.com/css?family=Roboto:100&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/slick.css">
+<!--  <link rel="stylesheet" href="css/slick-theme.css">-->
 </head>
 <body>
   <div class="wrapper">
@@ -14,8 +18,8 @@
         <div class="logo">Casino Opera</div>
       </div>
 
-      <div class="curtain-front-left"></div>
-      <div class="curtain-front-right"></div>
+      <div class="curtain-front curtain-front--left"></div>
+      <div class="curtain-front curtain-front--right"></div>
       <div class="entry">
           <a class="entry__btn" href="#">Вход</a>
           <a class="entry__link"href="#">Рус</a>
@@ -106,7 +110,29 @@
 
               
             <div class="main">
-              
+              <div class="banner__wrap">
+                   
+                <div class="banner">
+                    <div class="banner__slide">
+                      <img src="img/slide10.png" alt="Slider 1" />
+                      <a class="banner__link" href="#">подробнее</a>
+                    </div>
+                    <div class="banner__slide">
+                      <img src="img/slide20.png" alt="Slider 2" />
+                      <a class="banner__link" href="#">подробнее</a>
+                    </div>
+                    <div class="banner__slide">
+                      <img src="img/slide10.png" alt="Slider 1" />
+                      <a class="banner__link" href="#">подробнее</a>
+                    </div>
+                    <div class="banner__slide">
+                      <img src="img/slide20.png" alt="Slider 2" />
+                      <a class="banner__link" href="#">подробнее</a>
+                    </div>
+                </div>
+                
+               </div>
+<!--
                 <div class="banner">
                   <div class="banner__slides">
                     <div class="banner__slide slide-show">
@@ -129,6 +155,8 @@
                     <a href="#" class="banner__label"></a>
                   </div>
                 </div>
+-->
+                
             </div>
             <div class="fullslider"></div>
             
@@ -142,6 +170,19 @@
     </div>
   </div>
   
-  <script type="text/javascript" src="js/animate.js"></script>
+  <script type="text/javascript" src="js/vendor.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script>
+//      $(document).ready(function(){
+//        $('.banner').slick({
+//          autoplay: true,
+//          dots: true,
+//          autoplaySpeed: 2800,
+//          pauseOnDotsHover: true,
+//          arrows: false
+//        });
+//      
+  </script>
+  </script>
 </body>
 </html>

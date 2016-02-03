@@ -405,55 +405,33 @@ body {
   opacity: 2;
   -webkit-transition: all 6s;
   transition: all 6s; }
-
-.curtain-back::after,
-.curtain-back::before {
-  content: '';
-  display: table;
-  clear: both; }
+  .curtain-back::after, .curtain-back::before {
+    content: '';
+    display: table;
+    clear: both; }
 
 .curtain--hide {
-  top: -100%;
-  opacity: 0; }
+  top: -100%; }
 
 .curtain-front {
   padding: 0;
   margin: 0 auto;
   z-index: 5;
-  width: 1920px;
-  height: 1380px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  background: url("../img/bg_curtain.png") no-repeat 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%); }
-
-.curtain-front-left {
-  padding: 0;
-  margin: 0 auto;
-  z-index: 5;
   width: 780px;
   height: 2080px;
-  position: absolute;
-  left: 0;
-  top: 50%;
-  background: url("../img/bg_curtain-left.png") no-repeat 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%); }
-
-.curtain-front-right {
-  padding: 0;
-  margin: 0 auto;
-  z-index: 5;
-  width: 780px;
-  height: 2080px;
-  position: absolute;
-  top: 50%;
-  right: 0;
-  background: url("../img/bg_curtain-right.png") no-repeat 50%;
-  -webkit-transform: translate(50%, -50%);
-  transform: translate(50%, -50%); }
+  position: absolute; }
+  .curtain-front--left {
+    top: 50%;
+    left: 0;
+    background: url("../img/bg_curtain-left.png") no-repeat 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+  .curtain-front--right {
+    top: 50%;
+    left: 100%;
+    background: url("../img/bg_curtain-right.png") no-repeat 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
 
 .logo {
   position: absolute;
@@ -480,8 +458,8 @@ body {
   -webkit-transform: translateX(-50%) translateY(-50%);
           transform: translateX(-50%) translateY(-50%);
   opacity: 1;
-  -webkit-transition: all 0.6s;
-  transition: all 0.6s; }
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s; }
   .entry--hide {
     opacity: 0;
     z-index: 0; }
@@ -490,15 +468,19 @@ body {
     display: block;
     width: 285px;
     height: 60px;
-    background: url("../img/btn_entry.png") no-repeat 50%/cover;
+    background-image: url("../img/sprite.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden;
     cursor: pointer;
-    -webkit-transition: all 0.7s;
-    transition: all 0.7s; }
+    -webkit-transition: background-image 0.7s;
+    transition: background-image 0.7s; }
     .entry__btn:hover {
-      background: url("../img/btn_entry-hover.png") no-repeat 50%/cover; }
+      background-image: url("../img/sprite.png");
+      background-position: 0 -65px; }
   .entry__link {
     font-size: 12px;
     line-height: 18px;
@@ -699,76 +681,83 @@ body {
     .main-header__navlink {
       margin-right: 7px; } }
 
-.banner {
+.banner__wrap {
   position: absolute;
-  bottom: 74px;
   left: 50%;
+  bottom: 74px;
   width: 960px;
   height: 284px;
   font-size: 0;
-  background: rgba(70, 0, 17, 0.84) url("../img/bg_banner-slider.png") no-repeat 100%/cover;
+  background-image: url("../img/bg_banner-slider.png");
+  background-size: 100%;
   -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  overflow: hidden; }
-  .banner__slides {
-    width: 917px;
-    height: 228px;
-    margin: 22px auto 36px;
-    overflow: hidden; }
-  .banner__slides::before, .banner__slides::after {
-    content: '';
-    display: table;
-    clear: both; }
-  .banner__slide {
-    display: none;
-    float: left;
-    width: 917px;
-    height: 228px;
-    font-size: 12px; }
-    .banner__slide img {
-      max-width: 100%;
-      max-height: 100%;
-      width: auto;
-      height: auto;
-      margin: auto;
-      display: block; }
-  .banner__controls {
+          transform: translateX(-50%); }
+
+.banner {
+  position: relative;
+  width: 960px;
+  height: 284px; }
+  .banner__link {
     position: absolute;
-    bottom: 0;
-    left: 50%;
-    padding: 7px 0 6px;
-    font-size: 0;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%); }
-  .banner__label {
-    margin: 5px;
+    left: 60px;
+    bottom: 55px;
+    padding-bottom: 1px;
+    display: block;
+    font-size: 15px;
+    line-height: 17px;
+    color: #fff;
+    font-family: "Roboto", Geneva, Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    text-decoration: none;
+    letter-spacing: 0.25px;
+    border-bottom: 1px solid #fff; }
+    .banner__link:hover {
+      padding-bottom: 2px;
+      border: none; }
+  .banner__slide img {
+    max-width: 100%;
+    height: auto; }
+
+.banner .slick-slide {
+  position: relative;
+  outline: none; }
+
+.slick-initialized .slick-slide {
+  float: left; }
+
+.slick-dots {
+  position: absolute;
+  bottom: 11px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%); }
+  .slick-dots li {
+    margin: 0 5px;
+    display: inline-block; }
+  .slick-dots li button {
     display: inline-block;
     width: 12px;
     height: 12px;
     vertical-align: top;
     background-color: #9f8655;
     border-radius: 50%;
-    cursor: pointer; }
-    .banner__label:hover {
-      box-shadow: 0px 0px 7px 0px rgba(253, 251, 214, 0.7); }
-    .banner__label--active {
-      background-color: #fdfbe0;
-      box-shadow: 0px 0px 7px 0px rgba(253, 251, 214, 0.7); }
-  @media only screen and (min-width: 600px) and (max-width: 959px) {
-    .banner {
-      width: 684px;
-      height: 210px;
-      background: rgba(70, 0, 17, 0.84) url("../img/bg_banner-slider.png") no-repeat 100%/100%; }
-      .banner__slides {
-        width: 646px;
-        height: 163px;
-        margin: 19px auto 27px; }
-      .banner__slide {
-        width: 646px;
-        height: 163px; } }
+    border: 0;
+    outline: none; }
+  .slick-dots li button:hover,
+  .slick-dots li button:focus {
+    box-shadow: 0px 0px 7px 0px rgba(253, 251, 214, 0.7); }
+  .slick-dots li.slick-active button {
+    background-color: #fdfbe0;
+    box-shadow: 0px 0px 7px 0px rgba(253, 251, 214, 0.7); }
 
-.slide-show {
-  display: block; }
+@media only screen and (min-width: 600px) and (max-width: 959px) {
+  .banner__wrap, .banner {
+    width: 684px;
+    height: 210px; }
+  .banner__link {
+    left: 40px;
+    bottom: 40px;
+    font-size: 12px; } }
 
 .fullslider {
   position: absolute;
