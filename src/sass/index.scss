@@ -15,7 +15,7 @@
   left: 50%;
   top: 50%;
 //  background-color: #0c0803;
-  background: #0c0803 url("../img/bg_slider.jpg") no-repeat 50%/cover;
+//  background: #0c0803 url("../img/bg_slider.jpg") no-repeat 50%/cover;
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -33,13 +33,13 @@
     clear: both;
   }
   
-  &--opera {
-    background-image: url("../img/bg_opera.jpg");
-  }
-  
-  &--grand {
-    background-image: url("../img/bg_grand.jpg");
-  }
+//  &--opera {
+//    background-image: url("../img/bg_opera.jpg");
+//  }
+//  
+//  &--grand {
+//    background-image: url("../img/bg_grand.jpg");
+//  }
   .main {
     width: 100%;
   }
@@ -51,3 +51,27 @@
     }
   }
 }
+
+.background {
+      padding: 0;
+      margin: 0 auto;
+      z-index: 1;
+      width: 1920px;
+      height: 100vh;
+      max-height: 1080px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+
+.background--show {
+  background: #fff no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+

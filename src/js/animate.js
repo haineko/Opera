@@ -3,6 +3,8 @@ var loader = new PxLoader();
     loader.addImage('img/bg_curtain-left.png');
     loader.addImage('img/bg_curtain-right.png');
     loader.addImage('img/bg_slider.jpg');
+    loader.addImage('img/bg_opera.jpg');
+    loader.addImage('img/bg_grand.jpg');
     loader.addImage('img/logo-mini.png');
     loader.addImage('img/logo.png');
     loader.addImage('img/bg_main-header.png');
@@ -23,55 +25,55 @@ loader.addCompletionListener(function() {
       });
     });
     
+//    btn.addEventListener('click', function(event) {
+//      event.preventDefault();
+//      curtain.classList.add('curtain--hide');
+//      enrty.classList.add('entry--hide');
+//    });
+    
+//    initBackground();
+});
+ 
+loader.start();
+upCurtain();
+
+//function initBackground() {
+//  
+//  if (document.querySelector('.background--index')) {
+//    console.log("элементы index!");
+//    this.classList.add('background--show');
+//    this.style.backgroundImage = "img/bg_slider.jpg";
+////  } if (document.querySelector('.background--grand')) {
+////    console.log("элементы grand");
+////    $(".background").vegas({
+////        slides: [
+////            { src: "img/bg_grand.jpg" }
+////        ]
+////    });
+////  } if (document.querySelector('.background--opera')) {
+////    console.log("элементы opera!");
+////    $(".background").vegas({
+////        slides: [
+////            { src: "img/bg_slider.jpg" },
+////            { src: "img/bg_opera.jpg" },
+////            { src: "img/bg_grand.jpg" }
+////        ]
+////    });
+////  
+//  } else {
+//    console.log("элементы не найдены!");
+//  }
+//}
+
+function upCurtain() {
+  if (curtain) {
     btn.addEventListener('click', function(event) {
       event.preventDefault();
       curtain.classList.add('curtain--hide');
       enrty.classList.add('entry--hide');
     });
-});
- 
-loader.start();
-
-
-
-
-      
-/* поднятие занавеса */
-
-
-///* слайдер */
-//  var slider = document.querySelector(".banner");
-//  var sliderItem = document.querySelector(".banner__slide");var slider = document.querySelector(".banner");
-//  var toggles = slider.querySelectorAll(".banner__controls a");
-//  var slides = slider.querySelectorAll('.banner__slide');
-//  var togglesArray = getArray (toggles);
-//  var slidesArray = getArray (slides);
-//  console.log(slidesArray);
-//
-//
-//function getArray (counter) {
-//  for (i = 0; counter.length > i; i++) {
-//    counter[i].setAttribute("data-number", i);
-//  };
-//  return counter;
-//}
-//
-//function getClickedElement (evt) {
-//  evt.preventDefault();
-//  var element = evt.target;
-//  var dataN = evt.target.getAttribute("data-number");
-//  if (slidesArray.length > [+dataN]) {
-//    clearClass('banner__label--active');
-//    clearClass("slide-show");
-//    evt.target.classList.add('banner__label--active');
-//    slidesArray[+dataN].classList.add("slide-show");
-//  }
-//};
-//
-//function clearClass(classToCheck) {
-//  var element = document.querySelector("." + classToCheck);
-//  element.classList.remove(classToCheck);
-//};
-//slider.addEventListener('click', getClickedElement);
-//  
+  } else {
+    console.log("занавеса нет!");
+  }
+}
 

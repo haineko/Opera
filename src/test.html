@@ -7,21 +7,35 @@
   
   <link href='https://fonts.googleapis.com/css?family=Roboto:100&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/style.css">
-  
+  <link rel="stylesheet" href="css/vendor.css">
+  <style>
+    .fon {
+      padding: 0;
+      margin: 0 auto;
+      z-index: 2;
+      width: 1920px;
+      height: 100vh;
+      max-height: 1080px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+  </style>
 </head>
 <body>
   <div class="wrapper">
-    <div class="content">
+    <div class="content content--test">
 
       <div class="curtain-front curtain-front--left"></div>
       <div class="curtain-front curtain-front--right"></div>
       
       <div class="test">
-        <div class="fon">
-          <img src="img/bg_grand.jpg" alt="Зал Гранд">
-        </div>
+        <div class="background background--index"></div>
         <div class="index">
-          
+            
             <header class="main-header">
              <div class="index__wrap">
                
@@ -36,11 +50,11 @@
                       <a href="" class="main-header__link">Залы</a>
                       <div class="main-header__menu">
                         <ul class="main-header__submenu">
-                          <li><a href="opera.html">Opera</a></li>
-                          <li><a class="active" href="grand.html">Grand</a></li>
-                          <li><a href="chaliapine.html">Chaliapine</a></li>
-                          <li><a href="imperial.html">Imperial</a></li>
-                          <li><a href="pokerroom.html">Poker room</a></li>
+                          <li><a class="active" href="opera.html">Opera</a></li>
+                          <li><a href="grand.html">Grand</a></li>
+                          <li><a href="#">Chaliapine</a></li>
+                          <li><a href="#">Imperial</a></li>
+                          <li><a href="#">Poker room</a></li>
                         </ul>
                       </div>
                     </li>
@@ -48,10 +62,11 @@
                       <a href="" class="main-header__link">Игры</a>
                       <div class="main-header__menu">
                         <ul class="main-header__submenu">
-                          <li><a href="roulette.html">Рулетка</a></li>
-                          <li><a href="blackjack.html">Блэкджек</a></li>
-                          <li><a href="poker.html">Покер</a></li>
-                          <li><a href="puntobanco.html">Пунто банко</a></li>
+                          <li><a href="#">Рулетка</a></li>
+                          <li><a href="#">Блэкджек</a></li>
+                          <li><a href="#">Покер</a></li>
+                          <li><a href="#">Пунто панко</a></li>
+                          <li><a href="#">Poker room</a></li>
                         </ul>
                       </div>
                     </li>
@@ -59,9 +74,9 @@
                       <a href="" class="main-header__link">Рестораны</a>
                       <div class="main-header__menu">
                         <ul class="main-header__submenu">
-                          <li><a href="louis.html">Louis XIII</a></li>
-                          <li><a href="buffet.html">Buffet</a></li>
-                          <li><a href="bar.html">Бар</a></li>
+                          <li><a href="#">Louis XIII</a></li>
+                          <li><a href="#">Buffet</a></li>
+                          <li><a href="#">Бар</a></li>
                         </ul>
                       </div>
                     </li>
@@ -74,8 +89,8 @@
                 <div class="main-header__right">
                   
                   <nav class="main-header__nav">
-                    <a href="index.html" class="main-header__navlink">Главная</a>
-                    <a href="contact.html" class="main-header__navlink">Контакты</a>
+                    <a href="#" class="main-header__navlink">Главная</a>
+                    <a href="#" class="main-header__navlink">Контакты</a>
                   </nav>
                   
                   <ul class="main-header__list">
@@ -86,8 +101,9 @@
                       <a href="" class="main-header__link">События</a>
                       <div class="main-header__menu">
                         <ul class="main-header__submenu">
-                          <li><a href="stage.html">Сцена</a></li>
-                          <li><a href="afisha.html">Афиша</a></li>
+                          <li><a href="#">Клубный день</a></li>
+                          <li><a href="#">Сцена</a></li>
+                          <li><a href="#">Афиша</a></li>
                         </ul>
                       </div>
                     </li>
@@ -101,10 +117,8 @@
 
             <div class="main">
               <div class="description">
-                  <div class="description__logo description__logo--grand">Grand</div>
-                  <div class="description__text"><p>Настоящая сокровищница! Королевские оттенки золота и кожаная мебель создают приятную атмосферу для спокойной игры как в 
-одиночку, так и с друзьями или партнёрами по бизнесу. Члены клуба, играющие по самым высоким ставкам, наслаждаются здесь комфортом, уединённостью и изысканными интерьерами.
-</p></div>
+                  <div class="description__logo description__logo--opera">Grand</div>
+                  <div class="description__text"><p>Проникнутый духом роскоши, игорный зал создан с учётом всех потребностей игроков нашего клуба и призван обеспечить им безупречный комфорт и идеальную атмосферу для отдыха и игры.</p></div>
               </div> 
             </div>
 
