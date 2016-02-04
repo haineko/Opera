@@ -16,14 +16,24 @@
     clear: both;
   }
   
+   &__wrap {
+    margin: 0 auto;
+    width: 964px;
+  
+    &::after,
+    &::before {
+      content: '';
+      display: table;
+      clear: both;
+    }
+  }
   
   &__left {
-    padding-top: 33px;
+    padding-top: 35px;
     padding-left: 24px;
     float: left;
     width: 338px;
   }
-  
   &__language {
     margin-bottom: 26px;
     font-size: 12px;
@@ -89,6 +99,24 @@
   &__link {
     color: $color-text;
     text-decoration: none;
+    
+    &--active {
+    
+      &::before {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        left: 40%;
+        display: block;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 6.5px 8px 6.5px;
+        border-color: transparent transparent #9e8558 transparent;
+        transform: translateX(-50%);
+      }
+      
+    }
   }
   
   &__menu {
@@ -114,7 +142,7 @@
     &::after {
       content: '';
       position: absolute;
-      top: -7px;
+      top: -8px;
       left: 50%;
       display: block;
       width: 0;
@@ -128,10 +156,10 @@
       content: '';
       position: absolute;
       bottom: 8px;
-      left: 7px;
-      width: 184px;
+      left: 6px;
+      width: 187px;
       height: 13px;
-      background-image: url("../img/circle.jpg");
+      background-image: url("../img/circle1.jpg");
       background-position: 0;
       background-size: 100%;
       background-repeat: no-repeat;
@@ -169,6 +197,8 @@
   }
   
   &__logo {
+    position: relative;
+    z-index: 7;
     float: left;
     width: 284px;
     height: 164px;
@@ -216,7 +246,11 @@
     }
   }
   
-  @media only screen and (min-width: 600px) and (max-width: 959px) {
+  @media only screen and (max-width: 959px) {
+    &__wrap {
+      width: 684px;
+    }
+    
     &__left,
     &__right {
       width: 200px;
@@ -236,19 +270,36 @@
         right: 5px;
       }
     }
+    
+    &__link {
+      &--active {
+        &::before {
+          bottom: -16px;
+        }
+      }
+    }
     &__menu {
-      width: 200px;
+      top: 10px;
+      width: 180px;
     }
     &__submenu {
-    padding: 0 10px 10px;
     
-    a {
-      padding: 10px;
-      font-size: 12px;
-      color: $color-submenu-text;
-      text-decoration: none;
+      a {
+        padding: 10px;
+        font-size: 12px;
+        color: $color-submenu-text;
+        text-decoration: none;
+
+      }
+    
+      &::after {
+        top: -9px;
+      }
       
-    }
+      &::before {
+        left: 6px;
+        width: 169px;
+      }
   }
     &__navlink {
       font-size: 10px;
@@ -256,4 +307,3 @@
     }
   }
 }
-

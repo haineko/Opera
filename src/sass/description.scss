@@ -9,7 +9,7 @@
   font-size: 24px;
   line-height: 1;
   color: $color-text-hover;
-  background: rgba(70, 0, 17, 0.84) url("../img/bg_banner-slider.png") no-repeat 100%/cover;
+  background: rgba(70, 0, 17, 0.84) url("../img/bg_banner-slider.png") no-repeat 100%/100%;
   transform: translateX(-50%);
   overflow: hidden;
   
@@ -19,31 +19,19 @@
     display: table;
     clear: both;
   }
-//  &__wrap {
-//    margin: 22px 25px 36px;
-//    height: 284px;
-//  &::after,
-//  &::before {
-//    content: '';
-//    display: table;
-//    clear: both;
-//  }
-//  }
   
   &__logo {
+    position: relative;
     width: 30%;
     float: left;
     height: 226px;
     overflow: hidden;
-    text-indent: 100%;
-    white-space: nowrap;
     
-    &--opera {
-      background: url("../img/logo_opera.png") no-repeat center;
-    }
-    
-    &--grand {
-      background: url("../img/logo_grang.png") no-repeat center;
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
     }
   }
   &__text {
@@ -59,6 +47,21 @@
       margin: 0;
       padding-right: 25px;
       transform: translateY(-50%);
+    }
+  }
+  
+  @media only screen and (max-width: 959px) {
+    width: 684px;
+    height: 210px;
+    font-size: 16px;
+    
+    &__logo img {
+      width: 85%;
+    }
+    
+    &__logo,
+    &__text {
+      height: 152px;
     }
   }
 }

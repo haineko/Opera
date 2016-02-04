@@ -2,7 +2,7 @@
   position: absolute;
   top: 45%;
   left: 50%;
-  width: 45%;
+  width: 893px;
   height: 555px;
   display: block;
   text-indent: 100%;
@@ -10,4 +10,9 @@
   background: url("../img/logo.png") no-repeat 50%/cover;
   transform: translateX(-50%) translateY(-50%);
   overflow: hidden;
+  
+  @media only screen and (max-width: 959px) {
+    width: 630px;
+    height: 343px;
+  }
 }

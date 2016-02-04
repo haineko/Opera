@@ -25,7 +25,6 @@
   box-sizing: $bz;
 }
 
-// миксин для скрытия текста 
 @mixin invisible-text {
   font-size: 0;
   line-height: 0;
@@ -45,10 +44,6 @@
   }
 }
 
-// =============================================================================
-// String Replace
-// =============================================================================
-
 @function str-replace($string, $search, $replace: "") {
 	$index: str-index($string, $search);
 
@@ -58,10 +53,6 @@
 
 	@return $string;
 }
-
-// =============================================================================
-// Font Face
-// =============================================================================
 
 @mixin font-face($name, $path, $weight: null, $style: null, $exts: eot woff2 woff ttf svg) {
 	$src: null;

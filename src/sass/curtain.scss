@@ -1,3 +1,28 @@
+.curtain-front {
+  padding: 0;
+  margin: 0 auto;
+  z-index: 5;
+  width: 716px;
+  height: 1080px;
+  position: absolute;
+
+  &--right {
+    top: 50%;
+    left: 100%;
+    background: url("../img/curtain-right.png") no-repeat 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  &--left {
+    top: 50%;
+    left: 0;
+    background: url("../img/curtain-left.png") no-repeat 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+}
+
 .curtain-back {
   position: absolute;
   left: 50%;
@@ -21,34 +46,5 @@
 }
 
 .curtain--hide {
-  top: -100%;
-}
-
-.curtain-front {
-  padding: 0;
-  margin: 0 auto;
-  z-index: 5;
-  width: 780px;
-  height: 2080px;
-  position: absolute;
-  
-  &--left {
-    top: 50%;
-    left: 0;
-    background: url("../img/curtain-left.png") no-repeat 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-  }
-  
-  &--right {
-    top: 50%;
-    left: 100%;
-    background: url("../img/curtain-right.png") no-repeat 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-  }
+  transform: translate(-50%,-350%);
 }

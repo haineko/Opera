@@ -3,15 +3,20 @@
 @import "variables.scss";
 @import "mixin.scss";
 @import "base.scss";
+@import "background.scss";
+@import "content.scss";
 @import "curtain.scss";
 @import "logo.scss";
 @import "entry.scss";
-@import "fon.scss";
-@import "index.scss";
+@import "wrapper.scss";
 @import "main-header.scss";
+@import "main-footer.scss";
+//@import "fon.scss";
+//@import "index.scss";
+
 @import "banner.scss";
 @import "description.scss";
-//@import "slider.scss";
-@import "fullslider.scss";
-@import "main-footer.scss";
-@import "media.scss";
+////@import "slider.scss";
+//@import "fullslider.scss";
+
+//@import "media.scss";
