@@ -406,6 +406,18 @@ body {
     background-image: url("../img/bg_grand.jpg"); }
   .background--chaliapine {
     background-image: url("../img/bg_chaliapine.jpg"); }
+  .background--pokerroom {
+    background-image: url("../img/bg_pokerroom.jpg"); }
+  .background--imperial {
+    background-image: url("../img/bg_imperial.jpg"); }
+  .background--blackjack {
+    background-image: url("../img/bg_blackjack.jpg"); }
+  .background--roulette {
+    background-image: url("../img/bg_roulette.jpg"); }
+  .background--poker {
+    background-image: url("../img/bg_poker.jpg"); }
+  .background--puntobanco {
+    background-image: url("../img/bg_puntobanco.jpg"); }
 
 .content {
   position: absolute;
