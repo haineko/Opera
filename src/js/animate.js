@@ -12,6 +12,8 @@ var loader = new PxLoader();
 var btn = document.querySelector(".entry__btn");
 var curtain = document.querySelector(".curtain-back");
 var enrty = document.querySelector(".entry");
+var dish = document.querySelector(".description__link");
+var descr = document.querySelector(".description");
  
 loader.addCompletionListener(function() { 
     
@@ -25,6 +27,32 @@ loader.addCompletionListener(function() {
       });
     });
     
+//    $(document).ready(function(){
+//      $('.slider').slick({
+//          autoplay: true,
+//          dots: false,
+//          autoplaySpeed: 2600,
+//        fade: true,
+//        adaptiveHeight: true,
+//          pauseOnDotsHover: true,
+//          arrows: false
+//      });
+// 
+//      $('.dish').slick({
+//          autoplay: true,
+//          dots: true,
+//          autoplaySpeed: 2800,
+//          pauseOnDotsHover: true,
+//          arrows: false
+//      });
+//    });
+//  $(".dish__wrap").vegas({
+//        slides: [
+//            { src: "img/bg_louis-salad.jpg" },
+//            { src: "img/bg_louis-fish.jpg" },
+//            { src: "img/bg_louis-cake.jpg" }
+//        ]
+//    });
 //    btn.addEventListener('click', function(event) {
 //      event.preventDefault();
 //      curtain.classList.add('curtain--hide');
@@ -77,3 +105,8 @@ function upCurtain() {
   }
 }
 
+//dish.addEventListener('click', function(event) {
+//      event.preventDefault();
+//      descr.classList.add('description--hide');
+//      
+//});
