@@ -16,5 +16,9 @@
     max-width: 1920px;
     max-height: 1080px;
     transform: translateX(-50%) translateY(-50%);
+    &--footer {
+      z-index: 6;
+    }
   }
+  
 }

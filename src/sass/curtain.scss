@@ -21,6 +21,15 @@
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-30%, -50%);
   }
+  
+  @media only screen and (max-width: 959px) { 
+    &--left {
+      transform: translate(-12%, -50%);
+    }
+    &--right {
+      transform: translate(-88%, -50%);
+    }
+  }
 }
 
 .curtain-back {

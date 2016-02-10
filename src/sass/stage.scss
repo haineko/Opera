@@ -1,10 +1,10 @@
-.clubday {
+.stage {
   position: absolute;
   top: 50%;
   left: 50%;
   color: $color-text;
   
-  transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-100%);
   
   &__wrap {
     margin: 0 auto;
@@ -20,8 +20,7 @@
   
   &__title {
     font-family: "DoulosSilr", "Georgia", "Times New Roman", "Times", serif;
-    font-size: 36px;
-    max-font-size: 36px;
+    font-size: 62px;
     letter-spacing: 2px;
     text-transform: uppercase;
     text-align: center;
@@ -43,26 +42,23 @@
     }
   }
   
-  &__img {
-    margin: 0 auto;
-    width: 40vw;
-    max-width: 758px;
-    img {
-      max-width: 100%;
-      height: auto;
-    }
-  }
   &__text {
+    position: relative;
     margin: 0;
     font-family: "ArnoPro", "Georgia", "Times New Roman", "Times", serif;
     font-size: 24px;
     line-height: 1;
-    color: $color-text-hover;
     text-align: center;
     
-    .mark {
-      font-size: 30px;
-      color: $color-text;
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: -24px;
+      left: 50%;
+      width: 51px;
+      height: 13px;
+      background: url("../img/lines.png") no-repeat center center/100%;
+      transform: translateX(-50%);
     }
   }
   
@@ -73,15 +69,8 @@
     &__title {
       font-size: 22px;
     }
-    &__img {
-      width: 564px;
-    }
     &__text {
       font-size: 18px;
-      
-      .mark {
-        font-size: 20px;
-      }
     }
   }
 }
