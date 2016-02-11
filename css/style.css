@@ -454,12 +454,39 @@ body {
       z-index: 6; }
 
 .curtain-front {
+  position: absolute;
   padding: 0;
   margin: 0 auto;
   z-index: 5;
   width: 716px;
   height: 1080px;
-  position: absolute; }
+  overflow: hidden; }
+  .curtain-front__footer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100vh;
+    max-height: 1080px;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
+    .curtain-front__footer .curtain-footer {
+      position: absolute;
+      content: '';
+      bottom: -46px;
+      width: 65%;
+      height: 46px;
+      background-color: #0c0803;
+      -webkit-transition: bottom 0.37s;
+      transition: bottom 0.37s; }
+      .curtain-front__footer .curtain-footer--show {
+        bottom: 0; }
+    .curtain-front__footer--right .curtain-footer {
+      left: 0%; }
+    .curtain-front__footer--left .curtain-footer {
+      left: 100%;
+      -webkit-transform: translateX(-100%);
+              transform: translateX(-100%); }
   .curtain-front--right {
     top: 50%;
     left: 100%;
@@ -1055,8 +1082,8 @@ body {
   left: 50%;
   height: 70%;
   color: #9f8655;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-          transform: translateX(-50%) translateY(-50%); }
+  -webkit-transform: translateX(-50%) translateY(-40%);
+          transform: translateX(-50%) translateY(-40%); }
   .priviege__wrap {
     margin: 0 auto;
     width: 964px; }
@@ -1084,7 +1111,7 @@ body {
         -webkit-transform: translateX(-50%);
                 transform: translateX(-50%); }
   .priviege__text {
-    margin: 0 auto;
+    margin: 0 auto 25px;
     width: 80%;
     font-family: "ArnoPro", "Georgia", "Times New Roman", "Times", serif;
     font-size: 24px;
@@ -1095,27 +1122,40 @@ body {
     font-size: 0;
     list-style: none; }
   .priviege__item {
-    margin-right: 1vw;
+    margin-right: 77px;
     display: inline-block;
-    width: 30vw;
-    max-width: 253px;
+    width: 253px;
     font-family: "ArnoPro", "Georgia", "Times New Roman", "Times", serif;
     font-size: 24px;
+    line-height: 1;
     font-style: italic;
     color: #fff;
     vertical-align: top; }
     .priviege__item:nth-child(3n) {
       margin-right: 0; }
+    .priviege__item p {
+      margin: 0; }
   .priviege__img {
-    margin: 0 auto;
-    width: 12vw;
-    max-width: 253px;
-    height: 31vh;
-    max-height: 259px;
+    margin: 0 auto 20px;
+    width: 100%;
+    height: 297px;
     text-align: center; }
     .priviege__img img {
       max-width: 100%;
       height: auto; }
+  @media only screen and (max-width: 1560px) {
+    .priviege__list {
+      text-align: center; }
+    .priviege__title {
+      font-size: 24px; }
+    .priviege__text {
+      font-size: 18px; }
+    .priviege__item {
+      width: 188px;
+      font-size: 16px;
+      text-align: left; }
+    .priviege__img {
+      height: 220px; } }
 
 .clubday {
   position: absolute;
@@ -1364,4 +1404,214 @@ body {
       .afisha__text {
         margin: 0 auto;
         width: 664px;
+        font-size: 18px; } }
+
+.map {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #9f8655;
+  text-align: center;
+  -webkit-transform: translateX(-50%) translateY(-45%);
+          transform: translateX(-50%) translateY(-45%); }
+  .map__wrap {
+    position: relative;
+    margin: 0 auto 35px;
+    width: 964px;
+    border: 6px solid #967f57; }
+    .map__wrap::after {
+      content: '';
+      position: absolute;
+      top: -8px;
+      left: -8px;
+      width: 39px;
+      height: 39px;
+      z-index: 10000;
+      background: url("../img/angle.png") no-repeat center;
+      -webkit-transform: rotate(180deg);
+              transform: rotate(180deg); }
+    .map__wrap::before {
+      content: '';
+      position: absolute;
+      bottom: -8px;
+      left: -8px;
+      width: 39px;
+      height: 39px;
+      z-index: 10000;
+      background: url("../img/angle.png") no-repeat center;
+      -webkit-transform: rotate(90deg);
+              transform: rotate(90deg); }
+  .map__angle {
+    position: relative;
+    z-index: 100;
+    display: block; }
+    .map__angle::after {
+      content: '';
+      position: absolute;
+      top: -8px;
+      right: -8px;
+      width: 39px;
+      height: 39px;
+      z-index: 10000;
+      background: url("../img/angle.png") no-repeat center;
+      -webkit-transform: rotate(270deg);
+              transform: rotate(270deg); }
+    .map__angle::before {
+      content: '';
+      position: absolute;
+      bottom: -8px;
+      right: -8px;
+      width: 39px;
+      height: 39px;
+      z-index: 10000;
+      background: url("../img/angle.png") no-repeat center; }
+  .map #map {
+    position: relative;
+    width: 100%;
+    height: 380px; }
+  .map__title {
+    margin-bottom: 35px;
+    font-family: "DoulosSilr", "Georgia", "Times New Roman", "Times", serif;
+    font-size: 36px;
+    line-height: 1;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center; }
+    .map__title span {
+      position: relative; }
+      .map__title span::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 80%;
+        height: 1px;
+        background-color: #9f8655;
+        -webkit-transform: translateX(-50%);
+                transform: translateX(-50%); }
+  .map__address {
+    margin-bottom: 5px;
+    font-family: "ArnoPro", "Georgia", "Times New Roman", "Times", serif;
+    font-size: 24px;
+    color: #fff; }
+  .map__contact {
+    margin: 0 auto 35px;
+    width: 365px;
+    font-size: 24px;
+    font-family: "ArnoPro", "Georgia", "Times New Roman", "Times", serif; }
+    .map__contact::before, .map__contact::after {
+      content: '';
+      display: table;
+      clear: both; }
+    .map__contact .phone,
+    .map__contact .email {
+      float: left;
+      color: #fff;
+      text-decoration: none; }
+    .map__contact .email {
+      float: right;
+      text-decoration: underline; }
+  .map__info {
+    margin: 0 auto;
+    width: 964px;
+    font-family: "ArnoPro", "Georgia", "Times New Roman", "Times", serif; }
+    .map__info::before, .map__info::after {
+      content: '';
+      display: table;
+      clear: both; }
+  .map__work, .map__client {
+    padding: 13px 42px;
+    width: 458px;
+    height: 109px;
+    background: url("../img/frame.png") no-repeat 100%/100%; }
+    .map__work::before, .map__work::after, .map__client::before, .map__client::after {
+      content: '';
+      display: table;
+      clear: both; }
+    .map__work h2, .map__client h2 {
+      margin: 0;
+      margin-bottom: 25px;
+      font-family: "DoulosSilr", "Georgia", "Times New Roman", "Times", serif;
+      font-size: 24px;
+      line-height: 1;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-align: center; }
+      .map__work h2 span, .map__client h2 span {
+        position: relative; }
+        .map__work h2 span::before, .map__client h2 span::before {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          width: 80%;
+          height: 1px;
+          background-color: #9f8655;
+          -webkit-transform: translateX(-50%);
+                  transform: translateX(-50%); }
+    .map__work .phone,
+    .map__work .email, .map__client .phone,
+    .map__client .email {
+      float: left;
+      font-size: 24px;
+      color: #fff;
+      text-decoration: none; }
+    .map__work .email, .map__client .email {
+      float: right;
+      text-decoration: underline; }
+  .map__work {
+    float: left; }
+  .map__client {
+    float: right; }
+    .map__client .email {
+      float: none;
+      text-decoration: underline; }
+  @media only screen and (min-width: 960px) and (max-width: 1560px) {
+    .map {
+      -webkit-transform: translateX(-50%) translateY(-40%);
+              transform: translateX(-50%) translateY(-40%); }
+      .map__title {
+        margin-bottom: 25px;
+        font-size: 20px; }
+      .map__wrap, .map__info {
+        width: 800px; }
+      .map__wrap {
+        margin-bottom: 20px; }
+      .map #map {
+        height: 230px; }
+      .map__address, .map__contact {
+        font-size: 18px; }
+      .map__contact {
+        margin-bottom: 20px;
+        width: 270px; }
+      .map__work, .map__client {
+        width: 380px;
+        height: 90px; }
+        .map__work h2, .map__client h2 {
+          font-size: 19px; }
+        .map__work .phone,
+        .map__work .email, .map__client .phone,
+        .map__client .email {
+          font-size: 18px; } }
+  @media only screen and (max-width: 959px) {
+    .map__title {
+      font-size: 20px; }
+    .map__wrap, .map__info {
+      width: 684px; }
+    .map #map {
+      height: 260px; }
+    .map__address, .map__contact {
+      font-size: 18px; }
+    .map__contact {
+      width: 270px; }
+    .map__work, .map__client {
+      padding: 10px 22px;
+      width: 325px;
+      height: 80px; }
+      .map__work h2, .map__client h2 {
+        margin-bottom: 15px;
+        font-size: 19px; }
+      .map__work .phone,
+      .map__work .email, .map__client .phone,
+      .map__client .email {
         font-size: 18px; } }
