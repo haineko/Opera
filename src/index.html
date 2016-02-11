@@ -8,6 +8,33 @@
   <link href='https://fonts.googleapis.com/css?family=Roboto:100&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/vendor.css">
   <link rel="stylesheet" href="css/style.css">
+  
+  <style>
+    .curtain-front-block {
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        width: 255px;
+        height: 46px;
+        font-family: "Roboto", "Arial", sans-serif;
+        font-size: 12px;
+        line-height: 50px;
+        font-weight: 100;
+        color: #9f8655;
+        text-align: center;
+        background-color: #0c0803;
+    }
+    
+    .curtain-front::after {
+      position: absolute;
+      content: '';
+      bottom: 0;
+      left: 0;
+      width: 250px;
+      height: 46px;
+      background-color: #0c0803;
+    }
+  </style>
 <!--  <link rel="stylesheet" href="css/slick-theme.css">-->
 </head>
 <body>
@@ -20,7 +47,7 @@
      
       <div class="curtain-front curtain-front--left"></div>
       <div class="curtain-front curtain-front--right"></div>
-      
+      <div class="curtain-front-block"></div>
       <div class="curtain-back">
         <div class="logo">Casino Opera</div> 
       </div>
@@ -145,13 +172,12 @@
                 </div>
         
       </div>  
-      
-      <footer class="main-footer">
-        <p class="main-footer__copyright">Copyright © 2015 Les Ambassadeurs Club &amp; Casino, Mayfair, London. All Rights Reserved</p>
-      </footer>
-      
-    
+        
+        <footer class="main-footer">
+          <p class="main-footer__copyright">Copyright © 2015 Les Ambassadeurs Club &amp; Casino, Mayfair, London. All Rights Reserved</p>
+        </footer>
       </div>
+      
     </div>
   </div>
   <script type="text/javascript" src="js/vendor.js"></script>
