@@ -14,6 +14,8 @@ var curtain = document.querySelector(".curtain-back");
 var enrty = document.querySelector(".entry");
 var dish = document.querySelector(".description__link");
 var descr = document.querySelector(".description");
+//var curtainFooter = document.querySelector(".curtain-front__footer");
+var curtainFooter = document.querySelectorAll(".curtain-footer");
  
 loader.addCompletionListener(function() { 
     
@@ -92,13 +94,16 @@ upCurtain();
 //    console.log("элементы не найдены!");
 //  }
 //}
-
+//debugger;
 function upCurtain() {
   if (curtain) {
     btn.addEventListener('click', function(event) {
       event.preventDefault();
       curtain.classList.add('curtain--hide');
       enrty.classList.add('entry--hide');
+      for (var i = 0; i < curtainFooter.length; i++) {
+        curtainFooter[i].classList.add('curtain-footer--show');
+      }
     });
   } else {
     console.log("занавеса нет!");

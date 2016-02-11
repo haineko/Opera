@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/style.css">
   
   <style>
+/*
     .curtain-front-block {
         position: absolute;
         bottom: -1px;
@@ -24,16 +25,8 @@
         text-align: center;
         background-color: #0c0803;
     }
+*/
     
-    .curtain-front::after {
-      position: absolute;
-      content: '';
-      bottom: 0;
-      left: 0;
-      width: 250px;
-      height: 46px;
-      background-color: #0c0803;
-    }
   </style>
 <!--  <link rel="stylesheet" href="css/slick-theme.css">-->
 </head>
@@ -45,9 +38,13 @@
     
     <div class="content">
      
-      <div class="curtain-front curtain-front--left"></div>
-      <div class="curtain-front curtain-front--right"></div>
-      <div class="curtain-front-block"></div>
+      <div class="curtain-front curtain-front--left">
+        <div class="curtain-front__footer curtain-front__footer--left"><div class="curtain-footer"></div></div>
+      </div>
+      <div class="curtain-front curtain-front--right">
+        <div class="curtain-front__footer curtain-front__footer--right"><div class="curtain-footer"></div></div>
+      </div>
+      
       <div class="curtain-back">
         <div class="logo">Casino Opera</div> 
       </div>

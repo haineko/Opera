@@ -1,11 +1,52 @@
 .curtain-front {
+  position: absolute;
   padding: 0;
   margin: 0 auto;
   z-index: 5;
   width: 716px;
   height: 1080px;
-  position: absolute;
-
+  overflow: hidden;
+  
+  &__footer {
+//      display: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      height: 100vh;
+      max-height: 1080px;
+      transform: translate(-50%, -50%);
+//    &--show {
+//      &::after {
+//        bottom: 0;
+//      }
+//    }
+    
+    .curtain-footer {
+      position: absolute;
+      content: '';
+      bottom: -46px;
+      
+      width: 65%;
+      height: 46px;
+      background-color: #0c0803;
+      transition: bottom 0.37s;
+      &--show {
+        bottom: 0;
+      }
+    }
+    &--right {
+      .curtain-footer {
+        left: 0%;
+      }
+    }
+    &--left {
+      .curtain-footer {
+        left: 100%;
+        transform: translateX(-100%);
+      }
+    }
+  }
   &--right {
     top: 50%;
     left: 100%;
