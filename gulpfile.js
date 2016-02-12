@@ -6,6 +6,8 @@ var autoprefixer = require('gulp-autoprefixer');
 var notify = require("gulp-notify");
 var concat = require('gulp-concat');
 var rename = require("gulp-rename");
+var uglify = require("gulp-uglify");
+var cssmin = require('gulp-cssmin');
 
 gulp.task('html', function() {
   gulp.src("./src/*.html")
@@ -28,13 +30,25 @@ gulp.task('js', function() {
   
 });
 
-gulp.task('lib', function() {
+gulp.task('minJs', function() {
+  return gulp.src('./dest/js/*')
+    .pipe(uglify())
+    .pipe(gulp.dest('./dest/js'));
+});
+
+gulp.task('minCss', function() {
+  return gulp.src('./dest/css/*')
+    .pipe(cssmin())
+    .pipe(gulp.dest('./dest/css'));
+});
+
+gulp.task('libJs', function() {
   gulp.src("./src/lib/*")
   .pipe(concat('vendor.js'))
   .pipe(gulp.dest("./dest/js"))
 });
 
-gulp.task('csslib', function() {
+gulp.task('libCss', function() {
   gulp.src("./src/css/lib/*")
   .pipe(concat('vendor.css'))
   .pipe(gulp.dest("./dest/css"))
