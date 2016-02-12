@@ -91,7 +91,35 @@
     }
   }
   
-  @media only screen and (max-width: 1560px) {
+  @media only screen and (min-width: 960px) and (max-width: 1560px) {
+    &__wrap {
+      width: 900px;
+    }
+    
+    &__list {
+      text-align: center;
+    }
+    &__title {
+      font-size: 24px;
+    }
+    &__text {
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+    &__item {
+      width: 188px;
+      font-size: 16px;
+      text-align: left;
+    } 
+    &__img {
+      height: 220px;
+    }
+  }
+  
+  @media only screen and (max-width: 959px) {
+    &__wrap {
+      width: 684px;
+    }
     &__list {
       text-align: center;
     }
@@ -102,6 +130,7 @@
       font-size: 18px;
     }
     &__item {
+      margin-right: 40px;
       width: 188px;
       font-size: 16px;
       text-align: left;
