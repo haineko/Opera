@@ -67,7 +67,7 @@ gulp.task('font', function() {
   .pipe(gulp.dest("./dest/fonts"))
 });
 
-gulp.task('serve', ['html', 'sass', 'js', 'lib','image'], function() {
+gulp.task('serve', ['html', 'sass', 'js', 'libJs','image'], function() {
 
   browserSync.init({
     server: './dest/'
@@ -76,7 +76,7 @@ gulp.task('serve', ['html', 'sass', 'js', 'lib','image'], function() {
   gulp.watch("./src/img/*", ['image']);
   gulp.watch("./src/sass/**/*.scss", ['sass']);
   gulp.watch("./src/js/**/*.js", ['js']);
-  gulp.watch("./src/lib/**/*", ['lib']);
+  gulp.watch("./src/lib/**/*", ['libJs']);
   gulp.watch("./src/*.html", ['html']).on('change', reload);
 });
 
