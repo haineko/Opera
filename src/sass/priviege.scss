@@ -47,7 +47,7 @@
   &__text {
     margin: 0 auto 25px;
     width: 80%;
-    font-family: "ArnoPro", "Georgia", "Times New Roman", "Times", serif;
+    font-family: "ArnoPro Light", "Georgia", "Times New Roman", "Times", serif;
     font-size: 24px;
     text-align: center;
   }
@@ -63,10 +63,10 @@
     margin-right: 77px;
     display: inline-block;
     width: 253px;
-    font-family: "ArnoPro", "Georgia", "Times New Roman", "Times", serif;
+    font-family: "ArnoPro LightItalic", "Georgia", "Times New Roman", "Times", serif;
     font-size: 24px;
     line-height: 1;
-    font-style: italic;
+//    font-style: italic;
     color: $color-text-hover;
     vertical-align: top;
     
@@ -112,7 +112,9 @@
       text-align: left;
     } 
     &__img {
-      height: 220px;
+      height: 176px;
+      width: 150px;
+      margin-bottom: 10px;
     }
   }
   

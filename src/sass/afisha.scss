@@ -18,7 +18,7 @@
   }
   
   &__title {
-    margin-bottom: 35px;
+    margin-bottom: 38px;
     font-family: "DoulosSilr", "Georgia", "Times New Roman", "Times", serif;
     font-size: 36px;
     line-height: 17px;
@@ -55,16 +55,29 @@
     display: inline-block;
     width: 259px;
     height: 382px;
-    font-family: "ArnoPro", "Georgia", "Times New Roman", "Times", serif;
+    font-family: "ArnoPro Light", "Georgia", "Times New Roman", "Times", serif;
     font-size: 24px;
     color: $color-text-hover;
     vertical-align: bottom;
     background: url("../img/frame-mini.png") no-repeat center/100%;
     
     &--active {
+      position: relative;
       width: 341px;
       height: 503px;
-      background-image: url("../img/frame-big.png");
+      background-image: none;
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("../img/frame-big.png");
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        background-size: 100%;
+      }
       .afisha__img {
         height: 355px;
       }
@@ -106,7 +119,7 @@
   }
   &__text {
     margin: 0;
-    font-family: "ArnoPro", "Georgia", "Times New Roman", "Times", serif;
+    font-family: "ArnoPro Light", "Georgia", "Times New Roman", "Times", serif;
     font-size: 24px;
     line-height: 1;
     text-align: center;
@@ -139,7 +152,9 @@
       width: 200px;
       height: 296px;
       background-image: url("../img/frame-mini.png");
-      
+        &::before {
+          background-image: none;
+        }
         .afisha__img {
           margin-top: 4px;
           height: 191px;

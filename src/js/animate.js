@@ -83,22 +83,36 @@ function dishSlider() {
       dish.classList.add('dish--show');
       slider.classList.add('slider--show');
       $('.dish__wrap').slick({
-          autoplay: true,
-          dots: false,
+//          autoplay: true,
+          dots: true,
           fade: true,
-          autoplaySpeed: 15000,
+          autoplaySpeed: 5000,
           asNavFor: '.slider__wrap',
           arrows: false
       });
       $('.slider__wrap').slick({
-          autoplay: true,
+//          autoplay: true,
           dots: false,
           fade: true,
-          autoplaySpeed: 15000,
+          autoplaySpeed: 5000,
           asNavFor: '.dish__wrap',
           arrows: false
       });
     });
+  } 
+}
+
+function Slider() {
+  if ((document.querySelector(".background--opera")) || (document.querySelector(".background--grand")) || (document.querySelector(".background--chaliapine")) || (document.querySelector(".background--imperial")) || (document.querySelector(".background--pokerroom")) || (document.querySelector(".background--stage"))){
+    console.log("я наitttk");
+      $('.slider__wrap').slick({
+          autoplay: true,
+          dots: true,
+          fade: true,
+          autoplaySpeed: 5000,
+          arrows: false
+      });
+
   } 
 }
 
@@ -180,6 +194,7 @@ if (myMap) {
 loader.start();
 upCurtain();
 dishSlider();
+Slider();
 
 
 
