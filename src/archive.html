@@ -8,6 +8,8 @@
   <link href='https://fonts.googleapis.com/css?family=Roboto:100&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/vendor.css">
   <link rel="stylesheet" href="css/style.css">
+<!--  <link rel="stylesheet" type="text/css" href="lib/jqueryui-effects/jquery-ui.min.css">-->
+<!--  <link rel="stylesheet" href="lib/jqueryscrollbar/jquery.scrollbar.css">-->
 
 </head>
 <body>
@@ -117,6 +119,34 @@
           </div>
         </header>
         
+        <div class="archive">
+          <div class="afisha__wrap">
+              <h1 class="afisha__title"><span>Афиша</span></h1>
+              <div class="archive__content">
+                <div class="scrollbar-inner">
+                  <div class="archive__list">
+                    <div class="archive__date">
+                      <div class="archive__event">
+                        <div class="archive__photo"><img src="img/archive-event.png" alt="Событие"></div>
+                        <div class="archive__text">
+                          <p class="archive__number">8.01.2015</p>
+                          <p class="archive__text">Став членом элитарного клуба Opera вы можете быть уверены, что мы с удовольствием исполним любое ваше желание. Opera вы можете быть уверены, что мы с удовольствием исполним любое ваше желание.</p>
+                        </div>
+                      </div>
+                      <div class="archive__event">
+                        <div class="archive__photo"><img src="img/archive-event.png" alt="Событие"></div>
+                        <div class="archive__text">
+                          <p class="archive__number">8.01.2015</p>
+                          <p class="archive__text">Став членом элитарного клуба Opera вы можете быть уверены, что мы с удовольствием исполним любое ваше желание. Opera вы можете быть уверены, что мы с удовольствием исполним любое ваше желание.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        
         <footer class="main-footer">
           <p class="main-footer__copyright">Copyright © 2015 Les Ambassadeurs Club &amp; Casino, Mayfair, London. All Rights Reserved</p>
         </footer>
@@ -128,6 +158,12 @@
   
   <script type="text/javascript" src="js/vendor.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
-  
+<!--  <script type="text/javascript" src="lib/jqueryui-effects/jquery-ui.min.js"></script>-->
+<!--  <script type="text/javascript" src="lib/jqueryscrollbar/jquery.scrollbar.js"></script>-->
+      <script>
+     jQuery(document).ready(function(){
+        jQuery('.scrollbar-inner').scrollbar();
+    });
+    </script>
 </body>
 </html>
