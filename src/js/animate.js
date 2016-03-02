@@ -43,7 +43,7 @@ var curtainFooter = document.querySelectorAll(".curtain-footer");
 var descrLink = document.querySelector(".description__link");
 var descr = document.querySelector(".description");
 var dish = document.querySelector(".dish");
-var slider = document.querySelector(".slider");
+var slider = document.querySelector(".slider--dish");
 var myMap = document.getElementById("map");
 
 loader.addCompletionListener(function() { 
@@ -103,11 +103,11 @@ function dishSlider() {
 }
 
 function Slider() {
-  if ((document.querySelector(".background--opera")) || (document.querySelector(".background--grand")) || (document.querySelector(".background--chaliapine")) || (document.querySelector(".background--imperial")) || (document.querySelector(".background--pokerroom")) || (document.querySelector(".background--stage"))){
+  if ((document.querySelector(".background--opera")) || (document.querySelector(".background--grand")) || (document.querySelector(".background--chaliapine")) || (document.querySelector(".background--imperial")) || (document.querySelector(".background--louis")) || (document.querySelector(".background--stage"))){
     console.log("я наitttk");
       $('.slider__wrap').slick({
           autoplay: true,
-          dots: true,
+          dots: false,
           fade: true,
           autoplaySpeed: 5000,
           arrows: false
