@@ -1478,6 +1478,104 @@ body {
         width: 664px;
         font-size: 18px; } }
 
+.archive {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  color: #9f8655;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 75vh;
+  max-height: 825px;
+  overflow: hidden; }
+  .archive__wrap {
+    margin: 0 auto;
+    width: 964px; }
+    .archive__wrap::after, .archive__wrap::before {
+      content: '';
+      display: table;
+      clear: both; }
+  .archive__title {
+    font-family: "DoulosSilr", "Georgia", "Times New Roman", "Times", serif;
+    font-size: 36px;
+    line-height: 17px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center; }
+    .archive__title span {
+      position: relative; }
+      .archive__title span::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 135%;
+        height: 1px;
+        background-color: #9f8655;
+        -webkit-transform: translateX(-50%);
+                transform: translateX(-50%); }
+  .archive__content {
+    position: relative;
+    overflow: hidden; }
+    .archive__content::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 9vh;
+      background: url("../img/archive-shadow.png") repeat-x 0 0;
+      background-size: contain;
+      z-index: 4;
+      opacity: 0.5; }
+  .archive__list {
+    margin: 0 auto;
+    width: 792px;
+    height: 65vh;
+    max-height: 750px; }
+  .archive__date {
+    border-bottom: 1px solid #9f8655; }
+    .archive__date:last-child {
+      margin-bottom: 5vh;
+      border-bottom: 0; }
+  .archive__event {
+    padding: 23px 0;
+    width: 100%;
+    min-height: 210px;
+    box-sizing: border-box;
+    font-size: 0; }
+    .archive__event::after, .archive__event::before {
+      content: '';
+      display: table;
+      clear: both; }
+  .archive__photo {
+    width: 235px;
+    display: inline-block;
+    height: 166px;
+    vertical-align: top; }
+    .archive__photo img {
+      max-width: 100%;
+      height: auto; }
+  .archive__description {
+    padding-left: 50px;
+    display: inline-block;
+    width: 557px;
+    vertical-align: top; }
+  .archive__text {
+    margin: 0;
+    margin-bottom: 10px;
+    font-family: "ArnoPro LightItalic", "Georgia", "Times New Roman", "Times", serif;
+    font-size: 22px;
+    line-height: 1;
+    color: #fff; }
+    .archive__text:last-child {
+      margin-bottom: 0; }
+  .archive__number {
+    margin: 0;
+    font-family: "DoulosSilr", "Georgia", "Times New Roman", "Times", serif;
+    font-size: 24px;
+    color: #9e8558; }
+
 .map {
   position: absolute;
   top: 50%;
