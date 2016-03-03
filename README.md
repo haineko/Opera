@@ -1,2 +1,0 @@
-# CASINO OPERA
-Casino Opera
