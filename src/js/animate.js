@@ -92,7 +92,7 @@ function dishSlider() {
           autoplay: true,
           dots: true,
           fade: true,
-          autoplaySpeed: 5000,
+          autoplaySpeed: 9000,
           asNavFor: '.slider__wrap',
           arrows: false
       });
@@ -100,7 +100,7 @@ function dishSlider() {
           autoplay: true,
           dots: false,
           fade: true,
-          autoplaySpeed: 5000,
+          autoplaySpeed: 9000,
           asNavFor: '.dish__wrap',
           arrows: false
       });
@@ -110,7 +110,7 @@ function dishSlider() {
 
 function Slider() {
   if ((document.querySelector(".background--opera")) || (document.querySelector(".background--grand")) || (document.querySelector(".background--chaliapine")) || (document.querySelector(".background--imperial")) || (document.querySelector(".background--louis")) || (document.querySelector(".background--stage"))){
-    console.log("я наitttk");
+    console.log("слайдер блюд - есть!");
       $('.slider__wrap').slick({
           autoplay: true,
           dots: false,
@@ -122,6 +122,15 @@ function Slider() {
   } 
 }
 
+function Scroll() {
+    if (document.querySelector(".scrollbar-inner")) {
+    console.log("скролл есть!");
+    jQuery(document).ready(function(){
+      jQuery('.scrollbar-inner').scrollbar();
+    });
+  }
+}
+    
 function initialize() {
     
       var myLatlng = new google.maps.LatLng(53.8924836,27.5782985);
@@ -201,6 +210,6 @@ loader.start();
 upCurtain();
 dishSlider();
 Slider();
-
+Scroll();
 
 
