@@ -18,15 +18,15 @@
     clear: both;
   }
   
-//  &::before {
-//    content: '';
-//    position: absolute;
-//    bottom: -40px;
-//    left: 0;
-//    width: 100%;
-//    height: 2px;
-//    background-color: red;
-//  }
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: red;
+  }
   
    &__wrap {
     margin: 0 auto;

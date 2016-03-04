@@ -1,9 +1,18 @@
 .afisha {
-  position: absolute;
-  top: 44%;
+//  position: absolute;
+//  top: 44%;
+//  left: 50%;
+//  color: $color-text;
+//  transform: translateX(-50%) translateY(-45%);
+    position: absolute;
+  bottom: 0;
   left: 50%;
   color: $color-text;
-  transform: translateX(-50%) translateY(-45%);
+  transform: translateX(-50%);
+//  height: 75vh;
+  height: 84vh;
+  max-height: 920px;
+  overflow: hidden;
   
   &__wrap {
     margin: 0 auto;
@@ -18,10 +27,8 @@
   }
   
   &__title {
-    margin-bottom: 38px;
     font-family: "DoulosSilr", "Georgia", "Times New Roman", "Times", serif;
     font-size: 36px;
-    line-height: 17px;
     letter-spacing: 2px;
     text-transform: uppercase;
     text-align: center;
