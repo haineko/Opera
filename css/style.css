@@ -628,11 +628,21 @@ body {
   color: #9f8655;
   text-transform: uppercase;
   letter-spacing: 1px;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased !important;
   background: url("../img/bg_main-header.png") no-repeat 50%/cover; }
-  .main-header::after, .main-header::before {
+  .main-header::after {
     content: '';
     display: table;
     clear: both; }
+  .main-header::before {
+    content: '';
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: red; }
   .main-header__wrap {
     margin: 0 auto;
     width: 964px; }
@@ -927,8 +937,8 @@ body {
   height: 284px;
   padding: 22px 25px 36px;
   font-family: "ArnoPro Light", "Georgia", "Times New Roman", "Times", serif;
-  font-size: 24px;
-  line-height: 1;
+  font-size: 22px;
+  line-height: 1.2;
   color: #fff;
   background: url("../img/bg_banner-slider.png") no-repeat 100%/100%;
   -webkit-transform: translateX(-50%);
@@ -1122,7 +1132,7 @@ body {
 
 .priviege {
   position: absolute;
-  top: 50%;
+  top: 43%;
   left: 50%;
   height: 70%;
   color: #9f8655;
@@ -1138,10 +1148,10 @@ body {
   .priviege__title {
     font-family: "DoulosSilr", "Georgia", "Times New Roman", "Times", serif;
     font-size: 36px;
-    max-font-size: 36px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    text-align: center; }
+    text-align: center;
+    font-weight: normal; }
     .priviege__title span {
       position: relative; }
       .priviege__title span::before {
@@ -1169,7 +1179,7 @@ body {
     margin-right: 77px;
     display: inline-block;
     width: 253px;
-    font-family: "ArnoPro LightItalic", "Georgia", "Times New Roman", "Times", serif;
+    font-family: "ArnoPro Light", "Georgia", "Times New Roman", "Times", serif;
     font-size: 24px;
     line-height: 1;
     color: #fff;
@@ -1223,7 +1233,7 @@ body {
 
 .clubday {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   color: #9f8655;
   -webkit-transform: translateX(-50%) translateY(-50%);
@@ -1238,10 +1248,10 @@ body {
   .clubday__title {
     font-family: "DoulosSilr", "Georgia", "Times New Roman", "Times", serif;
     font-size: 36px;
-    max-font-size: 36px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    text-align: center; }
+    text-align: center;
+    font-weight: normal; }
     .clubday__title span {
       position: relative; }
       .clubday__title span::before {
@@ -1302,7 +1312,8 @@ body {
     font-size: 62px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    text-align: center; }
+    text-align: center;
+    font-weight: normal; }
     .stage__title span {
       position: relative; }
       .stage__title span::before {
@@ -1342,7 +1353,7 @@ body {
 
 .afisha {
   position: absolute;
-  top: 50%;
+  top: 44%;
   left: 50%;
   color: #9f8655;
   -webkit-transform: translateX(-50%) translateY(-45%);
@@ -1361,7 +1372,8 @@ body {
     line-height: 17px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    text-align: center; }
+    text-align: center;
+    font-weight: normal; }
     .afisha__title span {
       position: relative; }
       .afisha__title span::before {
@@ -1492,7 +1504,7 @@ body {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   height: 75vh;
-  max-height: 825px;
+  max-height: 920px;
   overflow: hidden; }
   .archive__wrap {
     margin: 0 auto;
@@ -1506,7 +1518,8 @@ body {
     font-size: 36px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    text-align: center; }
+    text-align: center;
+    font-weight: normal; }
     .archive__title span {
       position: relative; }
       .archive__title span::before {
@@ -1569,7 +1582,7 @@ body {
   .archive__text {
     margin: 0;
     margin-bottom: 10px;
-    font-family: "ArnoPro LightItalic", "Georgia", "Times New Roman", "Times", serif;
+    font-family: "ArnoPro Light", "Georgia", "Times New Roman", "Times", serif;
     font-size: 22px;
     line-height: 1;
     color: #fff; }
@@ -1599,7 +1612,7 @@ body {
 
 .map {
   position: absolute;
-  top: 50%;
+  top: 42%;
   left: 50%;
   color: #9f8655;
   text-align: center;
@@ -1667,7 +1680,8 @@ body {
     line-height: 1;
     letter-spacing: 2px;
     text-transform: uppercase;
-    text-align: center; }
+    text-align: center;
+    font-weight: 100; }
     .map__title span {
       position: relative; }
       .map__title span::before {
