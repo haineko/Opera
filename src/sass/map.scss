@@ -219,11 +219,11 @@
   }
   
   @media only screen and (min-width: 960px) and (max-width: 1560px) {
-    transform: translateX(-50%) translateY(-40%);
+    height: 77vh;
     
     &__title {
       margin-bottom: 25px;
-      font-size: 20px;
+      font-size: 24px;
     }
     
     &__wrap,
@@ -264,8 +264,9 @@
   }
   
   @media only screen and (max-width: 959px) {
+    height: 80vh;
     &__title {
-      font-size: 20px;
+      font-size: 22px;
     }
     &__wrap,
     &__info {

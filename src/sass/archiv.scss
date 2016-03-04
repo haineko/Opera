@@ -116,8 +116,17 @@
     font-size: 24px;
     color: #9e8558;
   }
-  
+  @media only screen and (min-width: 960px) and (max-width: 1560px) {
+    height: 77vh;
+    &__title {
+       font-size: 24px;
+    }
+  }
   @media only screen and (max-width: 959px) {
+    height: 80vh;
+    &__title {
+       font-size: 22px;
+    }
   &__wrap {
     width: 684px
   }

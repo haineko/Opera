@@ -125,8 +125,11 @@
       margin-bottom: 10px;
     }
   }
-  
+  @media only screen and (min-width: 960px) and (max-width: 1560px) {
+    height: 77vh;
+  }
   @media only screen and (max-width: 959px) {
+    height: 80vh;
     &__wrap {
       width: 684px;
     }
@@ -134,7 +137,7 @@
       text-align: center;
     }
     &__title {
-      font-size: 24px;
+      font-size: 22px;
     }
     &__text {
       font-size: 18px;
