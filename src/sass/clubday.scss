@@ -1,6 +1,6 @@
 .clubday {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   color: $color-text;
   
@@ -21,10 +21,10 @@
   &__title {
     font-family: "DoulosSilr", "Georgia", "Times New Roman", "Times", serif;
     font-size: 36px;
-    max-font-size: 36px;
     letter-spacing: 2px;
     text-transform: uppercase;
     text-align: center;
+    font-weight: normal;
     
     span {
       position: relative;

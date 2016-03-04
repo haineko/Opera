@@ -5,7 +5,7 @@
   color: $color-text;
   transform: translateX(-50%);
   height: 75vh;
-  max-height: 825px;
+  max-height: 920px;
   overflow: hidden;
   
     &__wrap {
@@ -21,13 +21,12 @@
   }
   
   &__title {
-//    margin-bottom: 38px;
     font-family: "DoulosSilr", "Georgia", "Times New Roman", "Times", serif;
     font-size: 36px;
-//    line-height: 17px;
     letter-spacing: 2px;
     text-transform: uppercase;
     text-align: center;
+    font-weight: normal;
     
     span {
       position: relative;
@@ -102,7 +101,7 @@
   &__text {
     margin: 0;
     margin-bottom: 10px;
-    font-family: "ArnoPro LightItalic", "Georgia", "Times New Roman", "Times", serif;
+    font-family: "ArnoPro Light", "Georgia", "Times New Roman", "Times", serif;
     font-size: 22px;
     line-height: 1;
     color: #fff;

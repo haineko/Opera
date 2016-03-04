@@ -1,6 +1,6 @@
 .map {
   position: absolute;
-  top: 50%;
+  top: 42%;
   left: 50%;
   color: $color-text;
   text-align: center;
@@ -82,6 +82,7 @@
     letter-spacing: 2px;
     text-transform: uppercase;
     text-align: center;
+    font-weight: 100;
     
     span {
       position: relative;

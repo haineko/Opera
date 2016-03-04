@@ -1,6 +1,6 @@
 .priviege {
   position: absolute;
-  top: 50%;
+  top: 43%;
   left: 50%;
   height: 70%;
   color: $color-text;
@@ -22,10 +22,10 @@
   &__title {
     font-family: "DoulosSilr", "Georgia", "Times New Roman", "Times", serif;
     font-size: 36px;
-    max-font-size: 36px;
     letter-spacing: 2px;
     text-transform: uppercase;
     text-align: center;
+    font-weight: normal;
     
     span {
       position: relative;
@@ -63,10 +63,9 @@
     margin-right: 77px;
     display: inline-block;
     width: 253px;
-    font-family: "ArnoPro LightItalic", "Georgia", "Times New Roman", "Times", serif;
+    font-family: "ArnoPro Light", "Georgia", "Times New Roman", "Times", serif;
     font-size: 24px;
     line-height: 1;
-//    font-style: italic;
     color: $color-text-hover;
     vertical-align: top;
     
