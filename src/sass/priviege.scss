@@ -99,6 +99,29 @@
     }
   }
   
+  &__manager {
+    margin: 0 auto;
+    width: 300px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  &__manager-name {
+    margin: 0;
+    font-family: "DoulosSilr", "Georgia", "Times New Roman", "Times", serif;
+    font-size: 26px;
+    color: #9f8655;
+    letter-spacing: 1px;
+  }
+  
+  &__phone {
+    margin: 0;
+    font-family: "ArnoPro Light", "Georgia", "Times New Roman", "Times", serif;
+    font-size: 30px;
+    color: #fff;
+    text-decoration: none;
+    
+  }
+  
   @media only screen and (min-width: 960px) and (max-width: 1560px) {
     &__wrap {
       width: 900px;
@@ -123,6 +146,13 @@
       height: 176px;
       width: 150px;
       margin-bottom: 10px;
+    }
+    &__manager-name {
+    font-size: 16px;
+    }
+
+    &__phone {
+      font-size: 20px;    
     }
   }
   @media only screen and (min-width: 960px) and (max-width: 1560px) {
@@ -150,6 +180,13 @@
     } 
     &__img {
       height: 220px;
+    }
+    &__manager-name {
+    font-size: 14px;
+    }
+
+    &__phone {
+      font-size: 18px;    
     }
   }
 }
