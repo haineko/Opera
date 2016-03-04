@@ -635,14 +635,6 @@ body {
     content: '';
     display: table;
     clear: both; }
-  .main-header::before {
-    content: '';
-    position: absolute;
-    bottom: -40px;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: red; }
   .main-header__wrap {
     margin: 0 auto;
     width: 964px; }
