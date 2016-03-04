@@ -11,9 +11,5 @@ body {
   margin: 0;
   padding: 0;
   background: #000;
-  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased !important;
 }
-
-//* {
-//  box-sizing: border-box;
-//}
