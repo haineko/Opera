@@ -1,0 +1,54 @@
+.entry {
+  position: absolute;
+  top: 760px;
+  left: 50%;
+  z-index: 6;
+  margin: 0 auto;
+  width: 290px;
+  text-align: center;
+  transform: translateX(-50%) translateY(-50%);
+  opacity: 1;
+  transition: all 0.35s;
+
+  &--hide {
+    opacity: 0;
+    z-index: 0;
+  }
+  
+  &__btn {
+    margin-bottom: 20px;
+    display: block;
+    width: 285px;
+    height: 60px;
+    background-image: url("../img/sprite.png");
+    background-repeat: no-repeat;
+    background-position:  0 0;
+    background-size: cover;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    cursor: pointer;
+    transition: background-image 0.7s;
+
+    &:hover {
+      background-image: url("../img/sprite.png");
+      background-position: 0 -65px;
+    }
+  }
+  
+  &__link {
+  font-size: 12px;
+  line-height: 18px;
+  color: $color-text;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.8s;
+  
+    &:hover {
+      color: $color-text-hover;
+      text-decoration: underline;
+    }
+  }
+  
+}

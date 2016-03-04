@@ -1,0 +1,144 @@
+.priviege {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 70%;
+  color: $color-text;
+  
+  transform: translateX(-50%) translateY(-40%);
+  
+  &__wrap {
+    margin: 0 auto;
+    width: 964px;
+    
+    &::after,
+    &::before {
+      content: '';
+      display: table;
+      clear: both;
+    }
+  }
+  
+  &__title {
+    font-family: "DoulosSilr", "Georgia", "Times New Roman", "Times", serif;
+    font-size: 36px;
+    max-font-size: 36px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    
+    span {
+      position: relative;
+      
+      &::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 75%;
+        height: 1px;
+        background-color: $color-text;
+        transform: translateX(-50%);
+
+      }
+    }
+  }
+  
+  &__text {
+    margin: 0 auto 25px;
+    width: 80%;
+    font-family: "ArnoPro Light", "Georgia", "Times New Roman", "Times", serif;
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  &__list {
+    margin: 0;
+    padding: 0 20px;
+    font-size: 0;
+    list-style: none;
+  }
+  
+  &__item {
+    margin-right: 77px;
+    display: inline-block;
+    width: 253px;
+    font-family: "ArnoPro LightItalic", "Georgia", "Times New Roman", "Times", serif;
+    font-size: 24px;
+    line-height: 1;
+//    font-style: italic;
+    color: $color-text-hover;
+    vertical-align: top;
+    
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+    
+    p {
+      margin: 0;
+    }
+  }
+  
+  &__img {
+    margin: 0 auto 20px;
+    width: 100%;
+    height: 297px;
+    text-align: center;
+    
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  
+  @media only screen and (min-width: 960px) and (max-width: 1560px) {
+    &__wrap {
+      width: 900px;
+    }
+    
+    &__list {
+      text-align: center;
+    }
+    &__title {
+      font-size: 24px;
+    }
+    &__text {
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+    &__item {
+      width: 188px;
+      font-size: 16px;
+      text-align: left;
+    } 
+    &__img {
+      height: 176px;
+      width: 150px;
+      margin-bottom: 10px;
+    }
+  }
+  
+  @media only screen and (max-width: 959px) {
+    &__wrap {
+      width: 684px;
+    }
+    &__list {
+      text-align: center;
+    }
+    &__title {
+      font-size: 24px;
+    }
+    &__text {
+      font-size: 18px;
+    }
+    &__item {
+      margin-right: 40px;
+      width: 188px;
+      font-size: 16px;
+      text-align: left;
+    } 
+    &__img {
+      height: 220px;
+    }
+  }
+}

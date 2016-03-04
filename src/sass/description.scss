@@ -1,0 +1,92 @@
+.description {
+  display: block;
+  position: absolute;
+  bottom: 74px;
+  left: 50%;
+  width: 960px;
+  height: 284px;
+  padding: 22px 25px 36px;
+  font-family: "ArnoPro Light", "Georgia", "Times New Roman", "Times", serif;
+  font-size: 24px;
+  line-height: 1;
+  color: $color-text-hover;
+  background:  url("../img/bg_banner-slider.png") no-repeat 100%/100%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  
+  &::after,
+  &::before {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  &--hide {
+    display: none;
+  }
+  
+  &__logo {
+    position: relative;
+    width: 30%;
+    float: left;
+    height: 226px;
+    overflow: hidden;
+    
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+    }
+  }
+  &__text {
+    position: relative;
+    float: right;
+    width: 70%;
+    height: 226px;
+    overflow: hidden;
+    
+    p {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      margin: 0;
+      padding-right: 25px;
+      transform: translateY(-50%);
+    }
+  }
+  
+  &__link {
+    position: absolute;
+    bottom: -14px;
+    right: 55px;
+    display: block;
+    font-size: 14px;
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: 100;
+    color: $color-text-hover;
+    text-decoration: none;
+    
+    span {
+      border-bottom: 1px solid  $color-text-hover;
+      
+      &:hover {
+          border-bottom: none;
+      }
+    }
+  }
+  
+  @media only screen and (max-width: 959px) {
+    width: 684px;
+    height: 210px;
+    font-size: 16px;
+    
+    &__logo img {
+      width: 85%;
+    }
+    
+    &__logo,
+    &__text {
+      height: 152px;
+    }
+  }
+}

@@ -1,0 +1,87 @@
+.clubday {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: $color-text;
+  
+  transform: translateX(-50%) translateY(-50%);
+  
+  &__wrap {
+    margin: 0 auto;
+    width: 964px;
+    
+    &::after,
+    &::before {
+      content: '';
+      display: table;
+      clear: both;
+    }
+  }
+  
+  &__title {
+    font-family: "DoulosSilr", "Georgia", "Times New Roman", "Times", serif;
+    font-size: 36px;
+    max-font-size: 36px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    
+    span {
+      position: relative;
+      
+      &::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 75%;
+        height: 1px;
+        background-color: $color-text;
+        transform: translateX(-50%);
+
+      }
+    }
+  }
+  
+  &__img {
+    margin: 0 auto;
+    width: 40vw;
+    max-width: 758px;
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  &__text {
+    margin: 0;
+    font-family: "ArnoPro Light", "Georgia", "Times New Roman", "Times", serif;
+    font-size: 24px;
+    line-height: 1;
+    color: $color-text-hover;
+    text-align: center;
+    
+    .mark {
+      font-size: 30px;
+      color: $color-text;
+    }
+  }
+  
+  @media only screen and (max-width: 959px) { 
+    &__wrap {
+      width: 684px;
+    }
+    &__title {
+      font-size: 22px;
+    }
+    &__img {
+      width: 564px;
+    }
+    &__text {
+      font-size: 18px;
+      
+      .mark {
+        font-size: 20px;
+      }
+    }
+  }
+}

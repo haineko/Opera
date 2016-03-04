@@ -1,0 +1,174 @@
+.slider {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    opacity: 0;
+    width: 100vw;
+    height: 100vh;
+    max-width: 1920px;
+    max-height: 1080px;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background-color: black;
+    overflow: hidden;
+  transition: opacity 0.5s;
+  &--show {
+     opacity: 1;
+  }
+  &__slide img{
+    max-width: 100%;
+    height: auto;
+  }
+  
+  @media only screen and (max-width: 959px) { 
+    width: 1920px;
+    height: 1080px;
+  }
+}
+
+.main {
+  position: absolute;
+  bottom: 12%;
+  left: 0;
+  width: 100%;
+  &--priviege {
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  &__wrap {
+    margin: 0 auto;
+    width: 964px;
+    
+    &::after,
+    &::before {
+      content: '';
+      display: table;
+      clear: both;
+    }
+  }
+  
+  @media only screen and (max-width: 959px) { 
+    &__wrap {
+      width: 684px;
+    }
+  }
+}
+
+.dish {
+  padding: 31px;
+  width: 472px;
+  height: 213px;
+  background-image: url("../img/bg_dish.png");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  display: none;
+  &--show {
+    display: block;
+  }
+  &--right {
+    float: right;
+  }
+  &--left {
+    float: left;
+  }
+  &__slide {
+    height: 150px;
+    font-family: "ArnoPro Light", "Georgia", "Times New Roman", "Times", serif;
+    font-size: 22px;
+    line-height: 1;
+    text-align: center;
+    color: $color-text-hover;
+    overflow: hidden;
+    outline: none;
+  }
+  
+  &__img {
+    position: relative;
+    margin-bottom: 15px;
+    display: inline-block;
+    max-width: 325px;
+//    height: 48px;
+    
+    img {
+      margin: 0 auto;  
+      max-width: 100%;
+      height: auto;
+    }
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      width: 141px;
+      height: 23px;
+      background-position: 0 0;
+      background-repeat: no-repeat;
+    }
+    &::before {
+      left: -145px;
+      background-image: url("../img/dish-decor-left.png");
+    }
+    &::after {
+      right: -145px;
+      background-image: url("../img/dish-decor-right.png");
+    }
+  }
+  
+  &__restaurant {
+    margin: 0 auto;
+    display: block;
+    font-family: "DoulosSilr", "Georgia", "Times New Roman", "Times", serif;
+    font-size: 18px;
+  }
+  
+  &__name {
+    position: relative;
+    margin: 0 auto;
+    display: inline-block;
+//    width: 325px;
+    font-family: "DoulosSilr", "Georgia", "Times New Roman", "Times", serif;
+    font-size: 26px;
+    text-transform: uppercase;
+
+  }
+  &__text {
+    margin: 0;
+  }
+  
+  &__ingredient {
+    font-family: "ArnoPro LightItalic", "Georgia", "Times New Roman", "Times", serif;
+//    font-size: 14px;
+  }
+  .slick-dots {
+    bottom: -45px;
+
+  }
+  
+  .slick-dots li button {
+    padding: 0;
+    width: 12px;
+    height: 12px;
+    font-size: 0;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid #fdfbe0;
+  }
+  
+  .slick-dots .slick-active button {
+    background-color: #fdfbe0;
+  }
+  
+  @media only screen and (max-width: 959px) { 
+    padding: 15px;
+    width: 342px;
+    height: 154px;
+    
+    &__slide {
+      font-size: 14px;
+    }
+  }
+}
