@@ -430,6 +430,8 @@ body {
     background-image: url("../img/bg_poker.jpg"); }
   .background--puntobanco {
     background-image: url("../img/bg_puntobanco.jpg"); }
+  .background--slots {
+    background-image: url("../img/bg_slots.jpg"); }
   .background--louis {
     background-image: url("../img/bg_louis.jpg"); }
   .background--buffet {
@@ -1075,7 +1077,7 @@ body {
     .dish__img::before, .dish__img::after {
       content: '';
       position: absolute;
-      top: 50%;
+      top: 40%;
       width: 141px;
       height: 23px;
       background-position: 0 0;
@@ -1090,14 +1092,17 @@ body {
     margin: 0 auto;
     display: block;
     font-family: "DoulosSilr", "Georgia", "Times New Roman", "Times", serif;
-    font-size: 18px; }
+    font-size: 13px;
+    font-weight: normal; }
   .dish__name {
     position: relative;
     margin: 0 auto;
     display: inline-block;
     font-family: "DoulosSilr", "Georgia", "Times New Roman", "Times", serif;
-    font-size: 26px;
-    text-transform: uppercase; }
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: normal;
+    letter-spacing: 1px; }
   .dish__text {
     margin: 0; }
   .dish__ingredient {
@@ -1190,6 +1195,23 @@ body {
     .priviege__img img {
       max-width: 100%;
       height: auto; }
+  .priviege__manager {
+    margin: 0 auto;
+    width: 300px;
+    text-transform: uppercase;
+    text-align: center; }
+  .priviege__manager-name {
+    margin: 0;
+    font-family: "DoulosSilr", "Georgia", "Times New Roman", "Times", serif;
+    font-size: 26px;
+    color: #9f8655;
+    letter-spacing: 1px; }
+  .priviege__phone {
+    margin: 0;
+    font-family: "ArnoPro Light", "Georgia", "Times New Roman", "Times", serif;
+    font-size: 30px;
+    color: #fff;
+    text-decoration: none; }
   @media only screen and (min-width: 960px) and (max-width: 1560px) {
     .priviege__wrap {
       width: 900px; }
@@ -1207,7 +1229,11 @@ body {
     .priviege__img {
       height: 176px;
       width: 150px;
-      margin-bottom: 10px; } }
+      margin-bottom: 10px; }
+    .priviege__manager-name {
+      font-size: 16px; }
+    .priviege__phone {
+      font-size: 20px; } }
   @media only screen and (min-width: 960px) and (max-width: 1560px) {
     .priviege {
       height: 77vh; } }
@@ -1228,7 +1254,11 @@ body {
         font-size: 16px;
         text-align: left; }
       .priviege__img {
-        height: 220px; } }
+        height: 220px; }
+      .priviege__manager-name {
+        font-size: 14px; }
+      .priviege__phone {
+        font-size: 18px; } }
 
 .clubday {
   position: absolute;
@@ -1416,7 +1446,6 @@ body {
     width: 259px;
     height: 382px;
     font-family: "ArnoPro Light", "Georgia", "Times New Roman", "Times", serif;
-    font-size: 24px;
     color: #fff;
     vertical-align: bottom;
     background: url("../img/frame-mini.png") no-repeat center/100%; }
@@ -1440,6 +1469,8 @@ body {
         height: 355px; }
       .afisha__item--active .afisha__description {
         width: 100%; }
+        .afisha__item--active .afisha__description p {
+          font-size: 24px; }
     .afisha__item:nth-child(3n) {
       margin-right: 0; }
   .afisha__img {
@@ -1456,15 +1487,18 @@ body {
     margin: 0;
     padding: 5px 7px 5px;
     text-align: center;
-    font-style: italic; }
+    font-family: "ArnoPro Regular", "Georgia", "Times New Roman", "Times", serif;
+    overflow: hidden; }
     .afisha__description p {
       margin: 0;
+      padding: 0 16px;
       position: absolute;
       top: 50%;
       left: 50%;
       -webkit-transform: translate(-50%) translateY(-50%);
               transform: translate(-50%) translateY(-50%);
-      width: 100%; }
+      width: 100%;
+      font-size: 18px; }
   .afisha__text {
     margin: 0;
     font-family: "ArnoPro Light", "Georgia", "Times New Roman", "Times", serif;
@@ -1501,11 +1535,17 @@ body {
             height: 191px;
             width: 200px;
             overflow: hidden; }
+          .afisha__item--active .afisha__description p {
+            padding: 0 15px;
+            font-size: 16px; }
       .afisha__img {
         height: 160px; }
       .afisha__description {
         height: 100px;
         font-size: 14px; }
+        .afisha__description p {
+          padding: 0 10px;
+          font-size: 12px; }
       .afisha__text {
         margin: 0 auto;
         width: 664px;
@@ -1532,11 +1572,17 @@ body {
             height: 191px;
             width: 200px;
             overflow: hidden; }
+          .afisha__item--active .afisha__description p {
+            padding: 0 15px;
+            font-size: 16px; }
       .afisha__img {
         height: 160px; }
       .afisha__description {
         height: 100px;
         font-size: 14px; }
+        .afisha__description p {
+          padding: 0 10px;
+          font-size: 12px; }
       .afisha__text {
         margin: 0 auto;
         width: 664px;
@@ -1754,7 +1800,8 @@ body {
     margin-bottom: 5px;
     font-family: "ArnoPro Light", "Georgia", "Times New Roman", "Times", serif;
     font-size: 24px;
-    color: #fff; }
+    color: #fff;
+    text-align: center; }
   .map__contact {
     margin: 0 auto 35px;
     width: 365px;
