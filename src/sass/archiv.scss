@@ -116,4 +116,29 @@
     font-size: 24px;
     color: #9e8558;
   }
+  
+  @media only screen and (max-width: 959px) {
+  &__wrap {
+    width: 684px
+  }
+  &__list {
+    width: 560px
+  }
+  &__event {
+    min-height: 159px
+  }
+  &__photo {
+    width: 168px;
+    height: 119px
+  }
+  &__description {
+    width: 392px
+  }
+  &__number {
+    font-size: 20px
+  }
+  &__text {
+    font-size: 16px
+  }
+}
 }
