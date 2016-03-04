@@ -380,6 +380,12 @@ th {
   font-style: normal;
   font-weight: normal; }
 
+@font-face {
+  font-family: "ArnoPro Regular";
+  src: url("../font/ArnoPro-Regular.eot?") format("eot"), url("../font/ArnoPro-Regular.woff2") format("woff2"), url("../font/ArnoPro-Regular.woff") format("woff"), url("../font/ArnoPro-Regular.ttf") format("truetype"), url("../font/ArnoPro-Regular.svg#ArnoPro_Regular") format("svg");
+  font-style: normal;
+  font-weight: normal; }
+
 html,
 body {
   position: relative;
@@ -1575,6 +1581,22 @@ body {
     font-family: "DoulosSilr", "Georgia", "Times New Roman", "Times", serif;
     font-size: 24px;
     color: #9e8558; }
+  @media only screen and (max-width: 959px) {
+    .archive__wrap {
+      width: 684px; }
+    .archive__list {
+      width: 560px; }
+    .archive__event {
+      min-height: 159px; }
+    .archive__photo {
+      width: 168px;
+      height: 119px; }
+    .archive__description {
+      width: 392px; }
+    .archive__number {
+      font-size: 20px; }
+    .archive__text {
+      font-size: 16px; } }
 
 .map {
   position: absolute;

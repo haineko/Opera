@@ -11,15 +11,19 @@ var loader = new PxLoader();
     loader.addImage('img/bg_bar-capsa2.jpg');
     loader.addImage('img/bg_blackjack.jpg');
     loader.addImage('img/bg_buffet.jpg');
+    loader.addImage('img/bg_buffet1.jpg');
     loader.addImage('img/bg_buffet-cake.jpg');
     loader.addImage('img/bg_buffet-fish.jpg');
     loader.addImage('img/bg_buffet-opera.jpg');
     loader.addImage('img/bg_chaliapine.jpg');
+    loader.addImage('img/bg_chaliapine1.jpg');
     loader.addImage('img/bg_clubday.jpg');
     loader.addImage('img/bg_dish.png');
     loader.addImage('img/bg_grand.jpg');
+    loader.addImage('img/bg_grand1.jpg');
     loader.addImage('img/bg_imperial.jpg');
     loader.addImage('img/bg_louis.jpg');
+    loader.addImage('img/bg_louis1.jpg');
     loader.addImage('img/bg_louis-fish.jpg');
     loader.addImage('img/bg_louis-salad.jpg');
     loader.addImage('img/bg_louis-cake.jpg');
@@ -27,11 +31,13 @@ var loader = new PxLoader();
     loader.addImage('img/bg_opera.jpg');
     loader.addImage('img/bg_poker.jpg');
     loader.addImage('img/bg_pokerroom.jpg');
+    loader.addImage('img/bg_pokerroom1.jpg');
     loader.addImage('img/bg_priviege.jpg');
     loader.addImage('img/bg_puntobanco.jpg');
     loader.addImage('img/bg_roulette.jpg');
     loader.addImage('img/bg_slider.jpg');
     loader.addImage('img/bg_stage.jpg');
+    loader.addImage('img/bg_stage1.jpg');
     loader.addImage('img/sprite.png');
 var btn = document.querySelector(".entry__btn");
 var curtain = document.querySelector(".curtain-back");
@@ -83,7 +89,7 @@ function dishSlider() {
       dish.classList.add('dish--show');
       slider.classList.add('slider--show');
       $('.dish__wrap').slick({
-//          autoplay: true,
+          autoplay: true,
           dots: true,
           fade: true,
           autoplaySpeed: 5000,
@@ -91,7 +97,7 @@ function dishSlider() {
           arrows: false
       });
       $('.slider__wrap').slick({
-//          autoplay: true,
+          autoplay: true,
           dots: false,
           fade: true,
           autoplaySpeed: 5000,
@@ -172,7 +178,7 @@ function initialize() {
         scrollwheel: false
       };
       var map = new google.maps.Map(document.getElementById("map"), myOptions); 
-      var map_point = new google.maps.MarkerImage("img/map-point.png", new google.maps.Size(69, 82), new google.maps.Point(0,0), new google.maps.Point(35, 41));	
+      var map_point = new google.maps.MarkerImage("img/map-point1.png", new google.maps.Size(164, 106), new google.maps.Point(0,0), new google.maps.Point(70, 53));	
       var nerds = new google.maps.LatLng(53.8924836,27.5782985);
       var marker = new google.maps.Marker({
         position: nerds,
