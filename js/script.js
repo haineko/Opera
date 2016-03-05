@@ -130,7 +130,7 @@ function stageSlider() {
 }
 
 function Slider() {
-  if ((document.querySelector(".background--opera")) || (document.querySelector(".background--grand")) || (document.querySelector(".background--chaliapine")) || (document.querySelector(".background--imperial")) || (document.querySelector(".background--louis")) ){
+  if ((document.querySelector(".background--opera")) || (document.querySelector(".background--grand")) || (document.querySelector(".background--chaliapine")) || (document.querySelector(".background--imperial")) || (document.querySelector(".background--louis")) || (document.querySelector(".background--pokerroom"))){
       $('.slider__wrap').slick({
           autoplay: true,
           dots: false,
