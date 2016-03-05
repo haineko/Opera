@@ -51,9 +51,10 @@ var descr = document.querySelector(".description");
 var dish = document.querySelector(".dish");
 var slider = document.querySelector(".slider--dish");
 var myMap = document.getElementById("map");
+//var click = 0;
 
 loader.addCompletionListener(function() { 
-    
+    $('body').addClass('loaded');
     $(document).ready(function(){
       $('.banner').slick({
           autoplay: true,
@@ -69,6 +70,9 @@ loader.addCompletionListener(function() {
 function upCurtain() {
   if (curtain) {
     btn.addEventListener('click', function(event) {
+      console.info('вход нажат');
+      var click;
+      click++;
       event.preventDefault();
       curtain.classList.add('curtain--hide');
       enrty.classList.add('entry--hide');
@@ -130,7 +134,25 @@ function Scroll() {
     });
   }
 }
-    
+function counterClick() {
+  if (document.querySelector(".map")) {
+    document.querySelector(".main-header__navlink").addEventListener('click', function (event) {
+      
+      event.preventDefault();
+      console.log(click);
+    });
+  }
+}
+//function counterClick {
+//  var click = 0;
+//  enrty.addEventListener('click', function (e) {
+//    console.info('вход нажат');
+//    e.preventDefault();
+//    click++;
+//    console.info('нажато раз: ' + click);
+//  });
+//}
+
 function initialize() {
     
       var myLatlng = new google.maps.LatLng(53.8924836,27.5782985);
@@ -211,5 +233,4 @@ upCurtain();
 dishSlider();
 Slider();
 Scroll();
-
-
+counterClick();
