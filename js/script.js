@@ -11,19 +11,15 @@ var loader = new PxLoader();
     loader.addImage('img/bg_bar-capsa2.jpg');
     loader.addImage('img/bg_blackjack.jpg');
     loader.addImage('img/bg_buffet.jpg');
-    loader.addImage('img/bg_buffet1.jpg');
     loader.addImage('img/bg_buffet-cake.jpg');
     loader.addImage('img/bg_buffet-fish.jpg');
     loader.addImage('img/bg_buffet-opera.jpg');
     loader.addImage('img/bg_chaliapine.jpg');
-    loader.addImage('img/bg_chaliapine1.jpg');
     loader.addImage('img/bg_clubday.jpg');
     loader.addImage('img/bg_dish.png');
     loader.addImage('img/bg_grand.jpg');
-    loader.addImage('img/bg_grand1.jpg');
     loader.addImage('img/bg_imperial.jpg');
     loader.addImage('img/bg_louis.jpg');
-    loader.addImage('img/bg_louis1.jpg');
     loader.addImage('img/bg_louis-fish.jpg');
     loader.addImage('img/bg_louis-salad.jpg');
     loader.addImage('img/bg_louis-cake.jpg');
@@ -31,13 +27,11 @@ var loader = new PxLoader();
     loader.addImage('img/bg_opera.jpg');
     loader.addImage('img/bg_poker.jpg');
     loader.addImage('img/bg_pokerroom.jpg');
-    loader.addImage('img/bg_pokerroom1.jpg');
     loader.addImage('img/bg_priviege.jpg');
     loader.addImage('img/bg_puntobanco.jpg');
     loader.addImage('img/bg_roulette.jpg');
     loader.addImage('img/bg_slider.jpg');
     loader.addImage('img/bg_stage.jpg');
-    loader.addImage('img/bg_stage1.jpg');
     loader.addImage('img/sprite.png');
 var btn = document.querySelector(".entry__btn");
 var curtain = document.querySelector(".curtain-back");
@@ -89,10 +83,10 @@ function dishSlider() {
       dish.classList.add('dish--show');
       slider.classList.add('slider--show');
       $('.dish__wrap').slick({
-          autoplay: true,
+		  autoplay: true,
           dots: true,
           fade: true,
-          autoplaySpeed: 9000,
+          autoplaySpeed: 5000,
           asNavFor: '.slider__wrap',
           arrows: false
       });
@@ -100,7 +94,7 @@ function dishSlider() {
           autoplay: true,
           dots: false,
           fade: true,
-          autoplaySpeed: 9000,
+          autoplaySpeed: 5000,
           asNavFor: '.dish__wrap',
           arrows: false
       });
@@ -110,7 +104,7 @@ function dishSlider() {
 
 function Slider() {
   if ((document.querySelector(".background--opera")) || (document.querySelector(".background--grand")) || (document.querySelector(".background--chaliapine")) || (document.querySelector(".background--imperial")) || (document.querySelector(".background--louis")) || (document.querySelector(".background--stage"))){
-    console.log("слайдер блюд - есть!");
+    console.log("я наitttk");
       $('.slider__wrap').slick({
           autoplay: true,
           dots: false,
@@ -122,15 +116,6 @@ function Slider() {
   } 
 }
 
-function Scroll() {
-    if (document.querySelector(".scrollbar-inner")) {
-    console.log("скролл есть!");
-    jQuery(document).ready(function(){
-      jQuery('.scrollbar-inner').scrollbar();
-    });
-  }
-}
-    
 function initialize() {
     
       var myLatlng = new google.maps.LatLng(53.8924836,27.5782985);
@@ -187,7 +172,7 @@ function initialize() {
         scrollwheel: false
       };
       var map = new google.maps.Map(document.getElementById("map"), myOptions); 
-      var map_point = new google.maps.MarkerImage("img/map-point1.png", new google.maps.Size(164, 106), new google.maps.Point(0,0), new google.maps.Point(70, 53));	
+      var map_point = new google.maps.MarkerImage("img/map-point.png", new google.maps.Size(69, 82), new google.maps.Point(0,0), new google.maps.Point(35, 41));	
       var nerds = new google.maps.LatLng(53.8924836,27.5782985);
       var marker = new google.maps.Marker({
         position: nerds,
@@ -210,144 +195,10 @@ loader.start();
 upCurtain();
 dishSlider();
 Slider();
-Scroll();
 
 
 
-//function initBackground() {
-//  
-//  if (document.querySelector('.background--index')) {
-//    console.log("элементы index!");
-//    this.classList.add('background--show');
-//    this.style.backgroundImage = "img/bg_slider.jpg";
-////  } if (document.querySelector('.background--grand')) {
-////    console.log("элементы grand");
-////    $(".background").vegas({
-////        slides: [
-////            { src: "img/bg_grand.jpg" }
-////        ]
-////    });
-////  } if (document.querySelector('.background--opera')) {
-////    console.log("элементы opera!");
-////    $(".background").vegas({
-////        slides: [
-////            { src: "img/bg_slider.jpg" },
-////            { src: "img/bg_opera.jpg" },
-////            { src: "img/bg_grand.jpg" }
-////        ]
-////    });
-////  
-//  } else {
-//    console.log("элементы не найдены!");
-//  }
-//}
-//debugger;
 
-    
-//    $(document).ready(function(){
-//      $('.slider').slick({
-//          autoplay: true,
-//          dots: false,
-//          autoplaySpeed: 2600,
-//        fade: true,
-//        adaptiveHeight: true,
-//          pauseOnDotsHover: true,
-//          arrows: false
-//      });
-// 
-//      $('.dish').slick({
-//          autoplay: true,
-//          dots: true,
-//          autoplaySpeed: 2800,
-//          pauseOnDotsHover: true,
-//          arrows: false
-//      });
-//    });
-//  $(".dish__wrap").vegas({
-//        slides: [
-//            { src: "img/bg_louis-salad.jpg" },
-//            { src: "img/bg_louis-fish.jpg" },
-//            { src: "img/bg_louis-cake.jpg" }
-//        ]
-//    });
-//    btn.addEventListener('click', function(event) {
-//      event.preventDefault();
-//      curtain.classList.add('curtain--hide');
-//      enrty.classList.add('entry--hide');
-//    });
-    
-//    initBackground();
-
-
-//dish.addEventListener('click', function(event) {
-//      event.preventDefault();
-//      descr.classList.add('description--hide');
-//      
-//});
-
-
-//var map;
-//var egglabs = new google.maps.LatLng(50.4504996602356, 30.51102876663208);
-//var mapCoordinates = new google.maps.LatLng(50.4504996602356, 30.51102876663208);
-//
-//
-//var markers = [];
-//var image = new google.maps.MarkerImage(
-//    '9lessons.png',
-//    new google.maps.Size(60,80),
-//    new google.maps.Point(0,0),
-//    new google.maps.Point(42,56)
-//  );
-//
-//function addMarker() 
-//{
-//      markers.push(new google.maps.Marker({
-//      position: egglabs,
-//      raiseOnDrag: false,
-//	    icon: image,
-//      map: map,
-//      draggable: false
-//      }));
-//      
-//}
-//
-//function initialize() {
-//  var mapOptions = {
-//	backgroundColor: "#ffffff",
-//    zoom: 14,
-//	disableDefaultUI: true,
-//    center: mapCoordinates,
-//    mapTypeId: google.maps.MapTypeId.ROADMAP,
-//	styles: [
-//			  {
-//			    "featureType": "landscape.natural",
-//			    "elementType": "geometry.fill",
-//			    "stylers": [
-//			      { "color": "#OOO" }
-//			    ]
-//			  },
-//				{
-//				    "elementType": "labels.text",
-//				    "stylers": [
-//				      { "color": "#333333" }
-//				    ]
-//				  },{
-//				    "featureType": "poi",
-//				    "stylers": [
-//				      { "visibility": "off" }
-//				    ]
-//				  }
-//			
-//			]
-//    
-//  };
-//map = new google.maps.Map(document.getElementById('map'),mapOptions);
-//addMarker();
-// 
-//}
-//google.maps.event.addDomListener(window, 'load', initialize);
-//
-//    
 /* делаем фоновый слайдер */
 
 
