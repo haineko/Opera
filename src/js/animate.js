@@ -112,9 +112,30 @@ function dishSlider() {
   } 
 }
 
+//function stageSlider() {
+//    if (document.querySelector(".background--stage")) {
+//    console.log("я на сцене");
+//      $('.dish__wrap').slick({
+//          autoplay: true,
+//          dots: false,
+//          fade: true,
+//          autoplaySpeed: 9000,
+//          asNavFor: '.slider__wrap',
+//          arrows: false
+//      });
+//      $('.slider__wrap').slick({
+//          autoplay: true,
+//          dots: false,
+//          fade: true,
+//          autoplaySpeed: 9000,
+//          asNavFor: '.dish__wrap',
+//          arrows: false
+//      });
+//  } 
+//}
+
 function Slider() {
   if ((document.querySelector(".background--opera")) || (document.querySelector(".background--grand")) || (document.querySelector(".background--chaliapine")) || (document.querySelector(".background--imperial")) || (document.querySelector(".background--louis")) || (document.querySelector(".background--stage"))){
-    console.log("слайдер блюд - есть!");
       $('.slider__wrap').slick({
           autoplay: true,
           dots: false,
@@ -130,19 +151,21 @@ function Scroll() {
     if (document.querySelector(".scrollbar-inner")) {
     console.log("скролл есть!");
     jQuery(document).ready(function(){
-      jQuery('.scrollbar-inner').scrollbar();
+      jQuery('.scrollbar-inner').scrollbar({
+        autoScrollSize: false
+      });
     });
   }
 }
-function counterClick() {
-  if (document.querySelector(".map")) {
-    document.querySelector(".main-header__navlink").addEventListener('click', function (event) {
-      
-      event.preventDefault();
-      console.log(click);
-    });
-  }
-}
+//function counterClick() {
+//  if (document.querySelector(".map")) {
+//    document.querySelector(".main-header__navlink").addEventListener('click', function (event) {
+//      
+//      event.preventDefault();
+//      console.log(click);
+//    });
+//  }
+//}
 //function counterClick {
 //  var click = 0;
 //  enrty.addEventListener('click', function (e) {
@@ -233,4 +256,5 @@ upCurtain();
 dishSlider();
 Slider();
 Scroll();
-counterClick();
+//stageSlider();
+//counterClick();

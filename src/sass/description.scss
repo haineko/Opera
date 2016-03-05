@@ -10,10 +10,10 @@
   font-size: 22px;
   line-height: 1.2;
   color: $color-text-hover;
-  background:  url("../img/bg_banner-slider.png") no-repeat 100%/100%;
+  background:  url("../img/bg_banner-description.png") no-repeat 100%/100%;
   transform: translateX(-50%);
   overflow: hidden;
-  
+
   &::after,
   &::before {
     content: '';
@@ -23,7 +23,9 @@
   &--hide {
     display: none;
   }
-  
+  &--none {
+    background-image: none;
+  }
   &__logo {
     position: relative;
     width: 30%;
@@ -88,5 +90,25 @@
     &__text {
       height: 152px;
     }
+  }
+}
+
+.description-stage {
+  display: block;
+  position: absolute;
+  bottom: 74px;
+  left: 50%;
+  width: 960px;
+  height: 284px;
+  padding: 22px 25px 36px;
+  font-family: "ArnoPro Light", "Georgia", "Times New Roman", "Times", serif;
+  font-size: 22px;
+  line-height: 1.2;
+  color: $color-text-hover;
+  transform: translateX(-50%);
+  overflow: hidden;
+  .description {
+    bottom: 0;
+    transform: none;
   }
 }
