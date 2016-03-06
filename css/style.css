@@ -269,28 +269,28 @@ th {
   font-family: DoulosSilr;
   src: url(../font/doulossilr-webfont.eot?) format("eot"), url(../font/doulossilr-webfont.woff2) format("woff2"), url(../font/doulossilr-webfont.woff) format("woff"), url(../font/doulossilr-webfont.ttf) format("truetype"), url(../font/doulossilr-webfont.svg#DoulosSilr) format("svg");
   font-style: normal;
-  font-weight: 400
+  font-weight: normal
 }
 
 @font-face {
   font-family: "ArnoPro Light";
   src: url(../font/ArnoPro-LightDisplay.eot?) format("eot"), url(../font/ArnoPro-LightDisplay.woff2) format("woff2"), url(../font/ArnoPro-LightDisplay.woff) format("woff"), url(../font/ArnoPro-LightDisplay.ttf) format("truetype"), url(../font/ArnoPro-LightDisplay.svg#ArnoPro_Light) format("svg");
   font-style: normal;
-  font-weight: 400
+  font-weight: normal
 }
 
 @font-face {
   font-family: "ArnoPro LightItalic";
   src: url(../font/ArnoPro-LightItalicDisplay.eot?) format("eot"), url(../font/ArnoPro-LightItalicDisplay.woff2) format("woff2"), url(../font/ArnoPro-LightItalicDisplay.woff) format("woff"), url(../font/ArnoPro-LightItalicDisplay.ttf) format("truetype"), url(../font/ArnoPro-LightItalicDisplay.svg#ArnoPro_LightItalic) format("svg");
   font-style: normal;
-  font-weight: 400
+  font-weight: normal
 }
 
 @font-face {
   font-family: "ArnoPro Regular";
   src: url(../font/ArnoPro-Regular.eot?) format("eot"), url(../font/ArnoPro-Regular.woff2) format("woff2"), url(../font/ArnoPro-Regular.woff) format("woff"), url(../font/ArnoPro-Regular.ttf) format("truetype"), url(../font/ArnoPro-Regular.svg#ArnoPro_Regular) format("svg");
   font-style: normal;
-  font-weight: 400
+  font-weight: normal
 }
 
 body,
@@ -629,15 +629,17 @@ html {
   background: url(../img/bg_main-header.png) 50%/cover no-repeat
 }
 
+/*
 .main-header::before {
   content: '';
   position: absolute;
-  top: 0;
+  top: 184px;
   left: 0;
   width: 100%;
   height: 1px;
   background: red;
 }
+*/
 
 .main-header__wrap {
   margin: 0 auto;
@@ -1687,10 +1689,10 @@ html {
 .stage__title {
   font-family: DoulosSilr, Georgia, "Times New Roman", Times, serif;
   font-size: 62px;
-  letter-spacing: 5px;
+  letter-spacing: 30px;
   text-transform: uppercase;
   text-align: center;
-  font-weight: 400
+  font-weight: normal;
 }
 
 .afisha__item--active .afisha__description p,
