@@ -93,10 +93,10 @@ function dishSlider() {
           dots: true,
           fade: true,
           autoplaySpeed: 9000,
-          asNavFor: '.slider__wrap',
+          asNavFor: '.slider__wrap--dish',
           arrows: false
       });
-      $('.slider__wrap').slick({
+      $('.slider__wrap--dish').slick({
           autoplay: true,
           dots: false,
           fade: true,
@@ -130,15 +130,14 @@ function stageSlider() {
 }
 
 function Slider() {
-  if ((document.querySelector(".background--opera")) || (document.querySelector(".background--grand")) || (document.querySelector(".background--chaliapine")) || (document.querySelector(".background--imperial")) || (document.querySelector(".background--louis")) || (document.querySelector(".background--pokerroom")) || (document.querySelector(".background--buffet"))){
-      $('.slider__wrap').slick({
+  if ((document.querySelector(".background--grand")) || (document.querySelector(".background--chaliapine")) || (document.querySelector(".background--louis")) || (document.querySelector(".background--pokerroom")) || (document.querySelector(".background--buffet"))){
+      $('.slider__wrap--background').slick({
           autoplay: true,
           dots: false,
           fade: true,
           autoplaySpeed: 5000,
           arrows: false
       });
-
   } 
 }
 
