@@ -137,6 +137,7 @@ function Slider() {
           dots: false,
           fade: true,
           autoplaySpeed: 5000,
+          mobileFirst: true,
           arrows: false
       });
   } 
