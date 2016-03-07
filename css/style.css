@@ -1196,7 +1196,7 @@ html {
 
 .intro__logo {
   position: relative;
-  width: 50%;
+  width: 35%;
   height: auto;
   padding-bottom: 20px;
 }
@@ -1207,7 +1207,6 @@ html {
 
 .intro__text {
   position: relative;
-  opacity: 0.8;
 }
 .intro__text::after {
   content: '';
@@ -1224,7 +1223,7 @@ html {
     font-size: 18px;
   }
   .intro__logo {
-    width: 48%;
+    width: 30%;
   }
 }
 .slider {
