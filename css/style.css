@@ -1180,6 +1180,50 @@ html {
   }
 }
 
+.intro {
+  display: block;
+  width: 50%;
+  height: auto;
+  font-family: "ArnoPro Light", Georgia, "Times New Roman", Times, serif;
+  font-size: 22px;
+  line-height: 1.2;
+  color: #fff;
+  overflow: hidden
+}
+
+.intro__logo {
+  position: relative;
+  width: 50%;
+  height: auto;
+  padding-bottom: 20px;
+}
+.intro__logo img {
+  display: block;
+  max-width: 100%;
+}
+
+.intro__text {
+  position: relative;
+  opacity: 0.8;
+}
+.intro__text::after {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 50%;
+  height: 2px;
+  background-color: #fff;
+  opacity: 0.8;
+}
+@media only screen and (min-width: 684px) and (max-width: 959px) {
+  .intro {
+    font-size: 18px;
+  }
+  .intro__logo {
+    width: 48%;
+  }
+}
 .slider {
   z-index: 1;
   opacity: 0;
@@ -1229,7 +1273,9 @@ html {
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%)
 }
-
+.main--hide {
+  display: none;
+}
 .main__wrap {
   margin: 0 auto;
   width: 964px
@@ -1473,10 +1519,11 @@ html {
 .priviege__img {
   margin: 0 auto 20px;
   width: 100%;
-  height: 297px
+  height: auto;
 }
 
 .priviege__img img {
+  display: block;
   max-width: 100%;
   height: auto
 }
@@ -1510,27 +1557,27 @@ html {
     text-align: center
   }
   .priviege__title {
-    font-size: 24px
+    font-size: 20px
   }
   .priviege__text {
     margin-bottom: 10px;
     font-size: 18px
   }
   .priviege__item {
-    width: 188px;
-    font-size: 16px;
+    width: 120px;
+    font-size: 12px;
     text-align: left
   }
   .priviege__img {
-    height: 176px;
-    width: 150px;
+    height: auto;
+    width: 120px;
     margin-bottom: 10px
   }
   .priviege__manager-name {
-    font-size: 16px
+    font-size: 14px
   }
   .priviege__phone {
-    font-size: 20px
+    font-size: 16px
   }
   .priviege {
     height: 77vh
@@ -1560,7 +1607,7 @@ html {
     text-align: left
   }
   .priviege__img {
-    height: 220px
+    height: auto
   }
   .priviege__manager-name {
     font-size: 14px
@@ -1586,7 +1633,7 @@ html {
   font-size: 36px;
   letter-spacing: 2px;
   text-align: center;
-  font-weight: 400
+  font-weight: normal
 }
 
 .clubday__title span {
@@ -1638,7 +1685,7 @@ html {
     width: 900px
   }
   .clubday__title {
-    font-size: 24px
+    font-size: 20px
   }
   .clubday__img {
     width: 684px
@@ -1749,7 +1796,12 @@ html {
   background: url(../img/lines.png) center center/100% no-repeat;
   transform: translateX(-50%)
 }
-
+@media only screen and (min-width: 960px) and (max-width: 1560px) {
+  .stage__title {
+    font-size: 28px;
+    letter-spacing: 15px;
+  }
+}
 @media only screen and (max-width: 959px) {
   .stage__wrap {
     width: 684px
@@ -1777,7 +1829,7 @@ html {
 .afisha__title {
   font-family: DoulosSilr, Georgia, "Times New Roman", Times, serif;
   font-size: 36px;
-  font-weight: 400
+  font-weight: normal
 }
 
 .afisha__title span {
@@ -1921,7 +1973,7 @@ html {
     text-align: center
   }
   .afisha__title {
-    font-size: 24px
+    font-size: 20px
   }
   .afisha__item {
     width: 175px;
@@ -2028,7 +2080,7 @@ html {
 .archive__title {
   font-family: DoulosSilr, Georgia, "Times New Roman", Times, serif;
   font-size: 36px;
-  font-weight: 400
+  font-weight: normal
 }
 
 .archive__title span {
@@ -2138,7 +2190,7 @@ html {
     height: 77vh
   }
   .archive__title {
-    font-size: 24px
+    font-size: 20px
   }
 }
 
@@ -2268,7 +2320,7 @@ html {
 .map__title {
   margin-bottom: 35px;
   font-size: 36px;
-  font-weight: 400
+  font-weight: normal
 }
 
 .map__address,
@@ -2387,7 +2439,7 @@ html {
   }
   .map__title {
     margin-bottom: 25px;
-    font-size: 24px
+    font-size: 20px
   }
   .map__contact,
   .map__wrap {

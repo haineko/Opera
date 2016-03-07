@@ -50,6 +50,7 @@ var descrLink = document.querySelector(".description__link");
 var descr = document.querySelector(".description");
 var dish = document.querySelector(".dish");
 var slider = document.querySelector(".slider--dish");
+var intro = document.querySelector(".main--intro");
 var myMap = document.getElementById("map");
 
 loader.addCompletionListener(function() { 
@@ -85,7 +86,7 @@ function dishSlider() {
   if (descrLink) {
     descrLink.addEventListener('click', function(event) {
       event.preventDefault();
-      descr.classList.add('description--hide');
+      intro.classList.add('main--hide');
       dish.classList.add('dish--show');
       slider.classList.add('slider--show');
       $('.dish__wrap').slick({
