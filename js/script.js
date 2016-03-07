@@ -136,7 +136,7 @@ function Slider() {
           autoplay: true,
           dots: false,
           fade: true,
-          autoplaySpeed: 5000,
+          autoplaySpeed: 9000,
           mobileFirst: true,
           arrows: false
       });

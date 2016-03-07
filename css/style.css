@@ -266,8 +266,8 @@ th {
 }
 
 @font-face {
-  font-family: DoulosSilr;
-  src: url(../font/doulossilr-webfont.eot?) format("eot"), url(../font/doulossilr-webfont.woff2) format("woff2"), url(../font/doulossilr-webfont.woff) format("woff"), url(../font/doulossilr-webfont.ttf) format("truetype"), url(../font/doulossilr-webfont.svg#DoulosSilr) format("svg");
+  font-family: "Doulos";
+  src: url("../font/doulossilr-webfont.eot?") format("eot"), url("../font/doulossilr-webfont.woff2") format("woff2"), url("../font/doulossilr-webfont.woff") format("woff");
   font-style: normal;
   font-weight: normal
 }
@@ -439,7 +439,7 @@ html {
   content: '';
   bottom: -46px;
   width: 65%;
-  height: 46px;
+  height: 45px;
   background-color: #0c0803;
   -webkit-transition: bottom 2s;
   transition: bottom 2s
@@ -726,7 +726,7 @@ html {
 
 .main-header__link::before {
   content: '';
-  bottom: -4px;
+  bottom: -9px;
   left: 50%;
   display: none;
   width: 0;
@@ -1188,6 +1188,7 @@ html {
   font-size: 22px;
   line-height: 1.2;
   color: #fff;
+  opacity: 0.8;
   overflow: hidden
 }
 
@@ -1734,7 +1735,7 @@ html {
 }
 
 .stage__title {
-  font-family: DoulosSilr, Georgia, "Times New Roman", Times, serif;
+  font-family: "Doulos", "Georgia", "Times New Roman", "Times", sans-serif;
   font-size: 62px;
   letter-spacing: 30px;
   text-transform: uppercase;
