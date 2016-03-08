@@ -166,7 +166,9 @@ textarea {
 .main-header,
 body,
 html {
-  -webkit-font-smoothing: antialiased!important
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  -webkit-font-smoothing: antialiased !important
 }
 
 button {
@@ -299,7 +301,10 @@ body,
 html {
   margin: 0;
   padding: 0;
-  background: #000
+  background: #000;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  -webkit-font-smoothing: antialiased !important;
 }
 
 .background,
@@ -627,7 +632,7 @@ html {
   font-family: DoulosSilr, Georgia, "Times New Roman", Times, serif;
   color: #9f8655;
   letter-spacing: 1px;
-  font-weight: 400;
+  font-weight: normal;
   background: url(../img/bg_main-header.png) 50%/cover no-repeat
 }
 
@@ -824,6 +829,7 @@ html {
   text-indent: 100%;
   white-space: nowrap;
   background: url(../img/logo-mininew.png) 0 -2% no-repeat;
+  background-size: 100%;
   overflow: hidden
 }
 
@@ -864,7 +870,34 @@ html {
 .main-header__navlink:hover {
   color: #fff
 }
-
+@media only screen and (min-width: 960px) and (max-width: 1560px) {
+  .main-header {
+    height: 140px;
+  }
+  .main-header__logo{
+    width: 240px;
+    height: 140px;
+  }
+  .main-header__left{
+    padding-top: 65px;
+  }
+  .main-header__right{
+    padding-top: 22px;
+  }
+  .main-header__left,
+  .main-header__right {
+    width: 362px
+  }
+  .main-header__item {
+    font-size: 16px
+  }
+  .main-header__menu {
+    top: 6px;
+  }
+  .main-header__link::before {
+    border-width: 0 5.5px 8px;
+  }
+}
 @media only screen and (max-width: 959px) {
   .main-header__wrap {
     width: 684px
@@ -959,7 +992,7 @@ html {
   background-image: url(../img/banner-border.png);
   background-size: 100%;
   background-repeat: no-repeat;
-  z-index: 10;
+/*  z-index: 10;*/
 }
 .banner {
   position: relative
@@ -1191,6 +1224,8 @@ html {
   line-height: 1.2;
   color: #fff;
   opacity: 0.8;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
   overflow: hidden
 }
 
@@ -1304,7 +1339,9 @@ html {
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
-  display: none
+  display: none;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
 }
 
 .dish--show {
@@ -1566,13 +1603,13 @@ html {
     font-size: 18px
   }
   .priviege__item {
-    width: 120px;
-    font-size: 14px;
+    width: 150px;
+    font-size: 16px;
     text-align: left
   }
   .priviege__img {
     height: auto;
-    width: 120px;
+    width: 150px;
     margin-bottom: 10px
   }
   .priviege__manager-name {
@@ -1582,7 +1619,7 @@ html {
     font-size: 16px
   }
   .priviege {
-    height: 73vh
+    height: 77vh
   }
 }
 
@@ -1671,6 +1708,7 @@ html {
   font-size: 24px;
   line-height: 1;
   color: #fff;
+  opacity: 0.8;
   text-align: center
 }
 
@@ -1681,7 +1719,7 @@ html {
 
 @media only screen and (min-width: 960px) and (max-width: 1560px) {
   .clubday {
-    height: 73vh
+    height: 77vh
   }
   .clubday__wrap {
     width: 900px
@@ -1690,7 +1728,7 @@ html {
     font-size: 20px
   }
   .clubday__img {
-    width: 684px
+    width: 40vw
   }
   .clubday__text {
     font-size: 18px
@@ -1941,7 +1979,8 @@ html {
   -webkit-transform: translate(-50%) translateY(-50%);
   transform: translate(-50%) translateY(-50%);
   width: 100%;
-  font-size: 18px
+  font-size: 18px;
+  opacity: 0.8;
 }
 
 .afisha__text {
@@ -1973,7 +2012,7 @@ html {
 
 @media only screen and (min-width: 960px) and (max-width: 1560px) {
   .afisha {
-    height: 73vh;
+    height: 77vh;
     text-align: center
   }
   .afisha__title {
@@ -2010,7 +2049,7 @@ html {
   }
   .afisha__description p {
     padding: 0 10px;
-    font-size: 12px
+    font-size: 13px
   }
   .afisha__text {
     margin: 0 auto;
@@ -2171,6 +2210,7 @@ html {
   font-family: "ArnoPro Light", Georgia, "Times New Roman", Times, serif;
   font-size: 22px;
   line-height: 1;
+  opacity: 0.8;
   color: #fff
 }
 
@@ -2191,7 +2231,7 @@ html {
 
 @media only screen and (min-width: 960px) and (max-width: 1560px) {
   .archive {
-    height: 73vh
+    height: 77vh
   }
   .archive__title {
     font-size: 20px
@@ -2439,7 +2479,7 @@ html {
 
 @media only screen and (min-width: 960px) and (max-width: 1560px) {
   .map {
-    height: 73vh
+    height: 77vh
   }
   .map__title {
     margin-bottom: 25px;

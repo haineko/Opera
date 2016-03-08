@@ -112,7 +112,7 @@ function dishSlider() {
 function stageSlider() {
     if (document.querySelector(".background--stage")) {
       $('.description-stage').slick({
-//          autoplay: true,
+          autoplay: true,
           dots: false,
           fade: true,
           autoplaySpeed: 9000,
@@ -120,7 +120,7 @@ function stageSlider() {
           arrows: false
       });
       $('.slider__wrap').slick({
-//          autoplay: true,
+          autoplay: true,
           dots: false,
           fade: true,
           autoplaySpeed: 9000,
