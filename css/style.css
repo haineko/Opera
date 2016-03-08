@@ -633,7 +633,10 @@ html {
   color: #9f8655;
   letter-spacing: 1px;
   font-weight: normal;
-  background: url(../img/bg_main-header.png) 50%/cover no-repeat
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  background: url(../img/bg_main-header.png) 50%/cover no-repeat;
+  
 }
 
 /*
@@ -688,8 +691,7 @@ html {
   position: relative;
   padding-right: 40px;
   display: inline-block;
-  font-size: 17px;
-  line-height: 17px;
+  font-size: 17px;  
   line-height: 1
 }
 
