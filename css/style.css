@@ -1567,7 +1567,7 @@ html {
   }
   .priviege__item {
     width: 120px;
-    font-size: 12px;
+    font-size: 14px;
     text-align: left
   }
   .priviege__img {
@@ -1582,7 +1582,7 @@ html {
     font-size: 16px
   }
   .priviege {
-    height: 77vh
+    height: 73vh
   }
 }
 
@@ -1681,7 +1681,7 @@ html {
 
 @media only screen and (min-width: 960px) and (max-width: 1560px) {
   .clubday {
-    height: 77vh
+    height: 73vh
   }
   .clubday__wrap {
     width: 900px
@@ -1760,7 +1760,9 @@ html {
 }
 
 .stage__title span {
-  position: relative
+  position: relative;
+  padding-left: 15px;
+  
 }
 
 .stage__title span::before {
@@ -1971,7 +1973,7 @@ html {
 
 @media only screen and (min-width: 960px) and (max-width: 1560px) {
   .afisha {
-    height: 77vh;
+    height: 73vh;
     text-align: center
   }
   .afisha__title {
@@ -2189,7 +2191,7 @@ html {
 
 @media only screen and (min-width: 960px) and (max-width: 1560px) {
   .archive {
-    height: 77vh
+    height: 73vh
   }
   .archive__title {
     font-size: 20px
@@ -2437,7 +2439,7 @@ html {
 
 @media only screen and (min-width: 960px) and (max-width: 1560px) {
   .map {
-    height: 77vh
+    height: 73vh
   }
   .map__title {
     margin-bottom: 25px;
