@@ -149,6 +149,7 @@ function initialize() {
         center: myLatlng,
         mapTypeId: google.maps.MapTypeId.ROADMAP,
         disableDefaultUI: true,
+        zoomControl: true,
         styles: [
     {
       "featureType": "landscape.man_made",
