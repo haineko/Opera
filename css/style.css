@@ -1294,7 +1294,7 @@ html {
 @media only screen and (min-width: 960px) and (max-width: 1560px) {
   .slider__slide img {
     width: 130%;
-    max-width: 100%;
+    max-width: 150%;
     height: auto
   }
 }
