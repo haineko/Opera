@@ -316,11 +316,13 @@ html {
 }
 
 .background {
+    //   width: 100vw;
+    // height: 100vh;
   z-index: 1;
   transform: translateX(-50%) translateY(-50%);
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover
+  background-size: cover;
 }
 
 .background--index {
@@ -328,55 +330,55 @@ html {
 }
 
 .background--opera {
-  background-image: url(../img/bg_opera.jpg)
+  background-image: url(../img/bg_opera-new.jpg)
 }
 
 .background--grand {
-  background-image: url(../img/bg_grand.jpg)
+  background-image: url(../img/bg_grand-new.jpg)
 }
 
 .background--chaliapine {
-  background-image: url(../img/bg_chaliapine.jpg)
+  background-image: url(../img/bg_chaliapine-new.jpg)
 }
 
 .background--pokerroom {
-  background-image: url(../img/bg_pokerroom.jpg)
+  background-image: url(../img/bg_pokerroom-new.jpg)
 }
 
 .background--imperial {
-  background-image: url(../img/bg_imperial.jpg)
+  background-image: url(../img/bg_imperial-new.jpg)
 }
 
 .background--blackjack {
-  background-image: url(../img/bg_blackjack.jpg)
+  background-image: url(../img/bg_blackjack-new.jpg)
 }
 
 .background--roulette {
-  background-image: url(../img/bg_roulette.jpg)
+  background-image: url(../img/bg_roulette-new.jpg)
 }
 
 .background--poker {
-  background-image: url(../img/bg_poker.jpg)
+  background-image: url(../img/bg_poker-new.jpg)
 }
 
 .background--puntobanco {
-  background-image: url(../img/bg_puntobanco.jpg)
+  background-image: url(../img/bg_puntobanco-new.jpg)
 }
 
 .background--slots {
-  background-image: url(../img/bg_slots.jpg)
+  background-image: url(../img/bg_slots-new.jpg)
 }
 
 .background--louis {
-  background-image: url(../img/bg_louis.jpg)
+  background-image: url(../img/bg_louis-new.jpg)
 }
 
 .background--buffet {
-  background-image: url(../img/bg_buffet.jpg)
+  background-image: url(../img/bg_buffet-new.jpg)
 }
 
 .background--bar {
-  background-image: url(../img/bg_bar.jpg)
+  background-image: url(../img/bg_bar-new.jpg)
 }
 
 .background--priviege {
@@ -388,7 +390,7 @@ html {
 }
 
 .background--stage {
-  background-image: url(../img/bg_stage.jpg)
+  background-image: url(../img/bg_stage-new.jpg)
 }
 
 .content {
@@ -1152,13 +1154,31 @@ html {
 }
 
 .description__link {
-  position: absolute;
-  bottom: -14px;
-  right: 55px;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 94px;
+  height: 44px;
+  border: none;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  margin-left: 50%;
   display: block;
-  font-size: 14px;
+  font-size: 12px;
+  line-height: 44px;
   font-family: Roboto, Arial, sans-serif;
-  color: #fff
+  color: #fff;
+  text-align: center;;
+  border: 3px solid #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%)
+}
+
+.description__link:hover {
+  color: #000;
+  background-color: #fff;
 }
 
 .description-stage,
@@ -1221,11 +1241,11 @@ html {
   display: block;
   width: 50%;
   height: auto;
-  font-family: "ArnoPro Light", Georgia, "Times New Roman", Times, serif;
-  font-size: 22px;
-  line-height: 1.2;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
   color: #fff;
-  opacity: 0.8;
   -webkit-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
   overflow: hidden
@@ -1243,7 +1263,9 @@ html {
 }
 
 .intro__text {
+  margin-bottom: 20px;
   position: relative;
+  text-align: justify;
 }
 .intro__text::after {
   content: '';
@@ -1253,7 +1275,6 @@ html {
   width: 50%;
   height: 2px;
   background-color: #fff;
-  opacity: 0.8;
 }
 @media only screen and (min-width: 684px) and (max-width: 959px) {
   .intro {
@@ -1315,6 +1336,70 @@ html {
   width: 100%
 }
 
+.main--opera {
+  bottom: 13%;
+}
+
+.main--grand {
+  bottom: 11%;
+}
+
+.main--chaliapine {
+  bottom: 40%;
+}
+
+.main--imperial {
+  bottom: 12%;
+}
+
+.main--pokerroom {
+  bottom: 12%;
+}
+.main--roulette {
+  bottom: 18%;
+}
+
+.main--blackjack {
+  bottom: 14%;
+}
+
+.main--blackjack .intro {
+    float: right;
+  }
+
+.main--poker{
+  bottom: 10%;
+}
+
+.main--puntobanco{
+  bottom: 10%;
+}
+
+.main--slots{
+  bottom: 14%;
+}
+
+.main--louis {
+  bottom: 12%;
+}
+
+.main--louis .intro {
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.main--buffet {
+  bottom: 15%;
+}
+
+.main--bar{
+  bottom: 15%;
+}
+
+.main--stage {
+  bottom: 15%;
+}
+
 .main--priviege {
   bottom: 50%;
   left: 50%;
@@ -1325,6 +1410,7 @@ html {
   display: none;
 }
 .main__wrap {
+  position: relative;
   margin: 0 auto;
   width: 964px
 }
@@ -1771,12 +1857,9 @@ html {
 }
 
 .stage {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  color: #9f8655;
-  -webkit-transform: translateX(-50%) translateY(-100%);
-  transform: translateX(-50%) translateY(-100%)
+  width: 50%;
+  color: #fff;
+
 }
 
 .stage__wrap {
@@ -1785,12 +1868,13 @@ html {
 }
 
 .stage__title {
+  padding-bottom: 13px;
   font-family: "Doulos", "Georgia", "Times New Roman", "Times", sans-serif;
-  font-size: 62px;
-  letter-spacing: 30px;
+  font-size: 50px;
   text-transform: uppercase;
-  text-align: center;
+  text-align: left;
   font-weight: normal;
+  letter-spacing: 5px;
 }
 
 .afisha__item--active .afisha__description p,
@@ -1814,26 +1898,35 @@ html {
   
 }
 
-.stage__title span::before {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 75%;
-  height: 1px;
-  background-color: #9f8655;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%)
-}
+// .stage__title span::before {
+//   content: '';
+//   position: absolute;
+//   bottom: 0;
+//   left: 50%;
+//   width: 75%;
+//   height: 1px;
+//   background-color: #fff;
+//   -webkit-transform: translateX(-50%);
+//   transform: translateX(-50%)
+// }
 
 .stage__text {
   position: relative;
   margin: 0;
-  font-family: "ArnoPro Light", Georgia, "Times New Roman", Times, serif;
-  line-height: 1;
-  text-align: center
+  font-family: "Roboto", Arial, serif;
+  line-height: 30px;
+  text-align: justify;
 }
 
+.stage__text::after {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 50%;
+  height: 2px;
+  background-color: #fff;
+}
 .afisha,
 .stage__text::before {
   position: absolute;
@@ -1841,18 +1934,12 @@ html {
   left: 50%
 }
 
-.stage__text::before {
-  content: '';
-  bottom: -24px;
-  width: 51px;
-  height: 13px;
-  background: url(../img/lines.png) center center/100% no-repeat;
-  transform: translateX(-50%)
-}
 @media only screen and (min-width: 960px) and (max-width: 1560px) {
   .stage__title {
     font-size: 28px;
-    letter-spacing: 15px;
+  }
+  .stage__text {
+    font-size: 18px
   }
 }
 @media only screen and (max-width: 959px) {
